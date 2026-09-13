@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="600" viewBox="0 0 820 600" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="80" y1="90" x2="620" y2="540" gradientUnits="userSpaceOnUse"><stop stop-color="#A9CE8F"/><stop offset="1" stop-color="#5C8D3A"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F0C56B"/><stop offset="1" stop-color="#D58B2B"/></linearGradient>
+  </defs>
+
+  <!-- decorative orbit -->
+  <g opacity=".32"><circle cx="290" cy="300" r="244" stroke="#A9CE8F" stroke-dasharray="3 14"/><circle cx="290" cy="300" r="212" stroke="#fff" stroke-opacity=".2"/><path d="M93 210c101-104 253-122 377-46" stroke="#D58B2B" stroke-dasharray="4 12"/></g>
+
+  <!-- sunrise -->
+  <circle cx="291" cy="300" r="148" fill="#fff" fill-opacity=".035"/><circle cx="291" cy="300" r="136" stroke="#D58B2B" stroke-opacity=".32" stroke-width="2"/>
+  <circle cx="291" cy="300" r="112" stroke="#A9CE8F" stroke-opacity=".28" stroke-dasharray="2 10"/>
+
+  <!-- original Bihar landmark skyline -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Golghar inspired dome -->
+    <g transform="translate(78 291)" stroke="url(#sky)" stroke-width="2.5">
+      <path d="M0 123h99M13 123C14 61 34 21 50 4c18 19 36 59 37 119M29 123V88h42v35M39 88V70h22v18"/>
+      <path d="M18 105h64M24 82h52M32 58h36"/>
+    </g>
+    <!-- Gandhi Maidan / civic tower inspired -->
+    <g transform="translate(158 204)" stroke="#D58B2B" stroke-width="2.4">
+      <path d="M0 210h100M17 210V79h66v131M10 79h80L76 58H24L10 79ZM34 58V25h32v33M42 25V5h16v20"/>
+      <path d="M31 108h38M31 135h38M31 162h38M31 189h38M43 210v-26h14v26"/>
+    </g>
+    <!-- Mahavir Mandir / temple cluster inspired -->
+    <g transform="translate(252 247)" stroke="url(#sky)" stroke-width="2.4">
+      <path d="M0 167h145M15 167V82h47v85M83 167V68h47v99M21 82l18-61 17 61M90 68l16-66 18 66"/>
+      <path d="M28 104h24M26 126h28M96 91h22M94 116h26M94 141h26M32 167v-23h14v23M99 167v-24h16v24"/>
+      <path d="M39 21V5M106 2v-17"/>
+    </g>
+    <!-- Patna bridge and river -->
+    <g transform="translate(55 413)" stroke="#F5F7F3" stroke-opacity=".7" stroke-width="2">
+      <path d="M0 18h385M23 18v-25M82 18v-25M141 18v-25M200 18v-25M259 18v-25M318 18v-25M377 18v-25"/>
+      <path d="M0 53c40-22 80-22 120 0s80 22 120 0 80-22 120 0M18 76c35-17 70-17 105 0s70 17 105 0 70-17 105 0"/>
+    </g>
+    <!-- Madhubani accents -->
+    <g transform="translate(105 120) rotate(-9 60 35)" stroke="#D58B2B" stroke-width="2">
+      <path d="M0 35c34-41 78-41 112 0-34 41-78 41-112 0Z"/><circle cx="29" cy="32" r="4"/><path d="m112 35 40-29-9 29 9 29-40-29ZM47 35c14-16 33-16 48 0-15 16-34 16-48 0Z"/>
+    </g>
+    <g transform="translate(350 104)" stroke="#A9CE8F" stroke-width="2">
+      <path d="M32 83C25 48 35 22 63 3M36 50C12 46 1 31 1 9c24 4 36 18 35 41ZM47 32c23-1 39-13 47-35-23-1-39 11-47 35Z"/>
+      <circle cx="27" cy="87" r="11"/><circle cx="51" cy="79" r="11"/><circle cx="42" cy="101" r="11"/>
+    </g>
+  </g>
+
+  <!-- Bihar marker -->
+  <g><circle cx="291" cy="300" r="43" fill="#022963" stroke="#F0C56B" stroke-width="3"/><path d="m270 292 20-9 24 7 11 14-15 13-28-2-16-11 4-12Z" fill="#A9CE8F"/><circle cx="291" cy="300" r="5" fill="#F0C56B"/></g>
+
+  <!-- world globe -->
+  <g transform="translate(590 270)" stroke="#F5F7F3" stroke-width="2.5" stroke-linecap="round" opacity=".9">
+    <circle cx="92" cy="92" r="88" fill="#fff" fill-opacity=".035"/><ellipse cx="92" cy="92" rx="35" ry="88"/><path d="M4 92h176M17 48h150M17 136h150"/>
+    <path d="M58 31c19 9 25 27 18 50-15 8-22 19-20 34M121 31c-18 17-19 33-2 49 21 10 24 28 10 53"/>
+  </g>
+
+  <!-- global flight routes -->
+  <g stroke-linecap="round">
+    <path d="M315 275C410 155 558 153 675 272" stroke="#F0C56B" stroke-width="3" stroke-dasharray="6 12"/>
+    <path d="M320 305c105-54 220-37 301 42" stroke="#A9CE8F" stroke-width="2.5" stroke-dasharray="5 11"/>
+    <path d="M315 330c93 62 209 78 318 27" stroke="#fff" stroke-opacity=".28" stroke-width="2" stroke-dasharray="3 12"/>
+  </g>
+
+  <!-- aircraft -->
+  <g transform="translate(480 163) rotate(22)" fill="#F5F7F3">
+    <path d="M0 17 49 9 72 0l10 4-21 13 34 5c7 1 10 5 7 9-2 3-6 4-12 3l-31-5-12 28-9-2 3-30-31-5L0 17Z"/>
+  </g>
+  <g transform="translate(487 309) rotate(17) scale(.72)" fill="#A9CE8F"><path d="M0 17 49 9 72 0l10 4-21 13 34 5c7 1 10 5 7 9-2 3-6 4-12 3l-31-5-12 28-9-2 3-30-31-5L0 17Z"/></g>
+
+  <g fill="#fff" font-family="Arial, sans-serif"><text x="210" y="507" font-size="18" font-weight="700" letter-spacing="3">BIHAR</text><text x="623" y="401" font-size="15" font-weight="700" letter-spacing="2">TO THE WORLD</text></g>
+</svg>

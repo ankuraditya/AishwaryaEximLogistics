@@ -1,0 +1,305 @@
+import {
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+  Globe2,
+  PackageCheck,
+  SearchCheck,
+} from "lucide-react";
+
+import {
+  useEffect,
+  useState,
+} from "react";
+
+import Button from "../common/Button";
+import Container from "../common/Container";
+import { useCmsSection } from "../../hooks/useCmsSection";
+import { mediaUrl } from "../../utils/media";
+
+import handicraft01 from "../../assets/images/handicrafts/handicraft-01.webp";
+import handicraft03 from "../../assets/images/handicrafts/handicraft-03.webp";
+import handicraft06 from "../../assets/images/handicrafts/handicraft-06.webp";
+
+const heroSlides = [
+  {
+    image: handicraft01,
+    alt: "Hand-painted Indian handicraft handbag",
+    label: "Handcrafted in India",
+  },
+  {
+    image: handicraft03,
+    alt: "Traditional Indian handicraft tote bag",
+    label: "Distinctive folk-art products",
+  },
+  {
+    image: handicraft06,
+    alt: "Collection of hand-painted Indian handbags",
+    label: "Created for global buyers",
+  },
+];
+
+const heroFallback = {
+  eyebrow: "Indian Products • Global Opportunities",
+  heading: "Connecting Quality Indian Products to Global Markets.",
+  body: "Aishwary Exim & Logistics brings together Indian handicrafts, biodegradable food packaging, leather goods and garments through a buyer-focused sourcing and export platform.",
+  primary_button: "Explore Our Products",
+  secondary_button: "Request a Quote",
+  features: ["B2B & Bulk Enquiries", "Requirement-Based Sourcing", "Export-Focused Support"],
+  floating_title: "Connecting Bihar, India",
+  floating_text: "to the World",
+  items: heroSlides,
+};
+
+const HomeHero = () => {
+  const { content: hero } = useCmsSection("home", "hero", heroFallback);
+  const slides = hero.items?.length
+    ? hero.items.map((slide, index) => ({
+        ...heroSlides[index % heroSlides.length],
+        ...slide,
+        image: mediaUrl(slide.image || slide.media) || (index === 0 ? mediaUrl(hero.media) : null) || heroSlides[index % heroSlides.length].image,
+      }))
+    : heroSlides;
+  const [activeSlide, setActiveSlide] =
+    useState(0);
+
+  const [isPaused, setIsPaused] =
+    useState(false);
+
+  useEffect(() => {
+    if (
+      isPaused ||
+      window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches
+    ) {
+      return undefined;
+    }
+
+    const timer = window.setInterval(
+      () => {
+        setActiveSlide(
+          (current) =>
+            (current + 1) %
+            slides.length
+        );
+      },
+      5000
+    );
+
+    return () =>
+      window.clearInterval(timer);
+  }, [isPaused, slides.length]);
+
+  const showSlide = (index) => {
+    setActiveSlide(
+      (index + slides.length) %
+        slides.length
+    );
+  };
+
+  return (
+    <section className="ael-home-hero">
+      <div
+        className="ael-home-hero__mithila-pattern"
+        aria-hidden="true"
+      />
+
+      <div
+        className="ael-home-hero__folk-border"
+        aria-hidden="true"
+      />
+
+      <div className="ael-home-hero__decoration ael-home-hero__decoration--one" />
+      <div className="ael-home-hero__decoration ael-home-hero__decoration--two" />
+
+      <Container className="ael-home-hero__container">
+        <div className="ael-home-hero__content">
+          <div className="ael-home-hero__eyebrow">
+            <Globe2 size={16} />
+
+            <span>
+              {hero.eyebrow}
+            </span>
+          </div>
+
+          <h1>{hero.heading}</h1>
+
+          <p className="ael-home-hero__description">
+            {hero.body}
+          </p>
+
+          <div className="ael-home-hero__actions">
+            <Button
+              to="/products"
+              size="lg"
+            >
+              {hero.primary_button}
+
+              <ArrowRight size={18} />
+            </Button>
+
+            <Button
+              to="/request-a-quote"
+              variant="outline-primary"
+              size="lg"
+            >
+              {hero.secondary_button}
+            </Button>
+          </div>
+
+          <div className="ael-home-hero__features">
+            <div>
+              <PackageCheck size={18} />
+
+              <span>
+                {hero.features?.[0] || heroFallback.features[0]}
+              </span>
+            </div>
+
+            <div>
+              <SearchCheck size={18} />
+
+              <span>
+                {hero.features?.[1] || heroFallback.features[1]}
+              </span>
+            </div>
+
+            <div>
+              <Globe2 size={18} />
+
+              <span>
+                {hero.features?.[2] || heroFallback.features[2]}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="ael-home-hero__visual"
+          onMouseEnter={() =>
+            setIsPaused(true)
+          }
+          onMouseLeave={() =>
+            setIsPaused(false)
+          }
+          onFocus={() =>
+            setIsPaused(true)
+          }
+          onBlur={(event) => {
+            if (
+              !event.currentTarget.contains(
+                event.relatedTarget
+              )
+            ) {
+              setIsPaused(false);
+            }
+          }}
+          aria-roledescription="carousel"
+          aria-label="Featured product images"
+        >
+          <div className="ael-home-hero__slider">
+            {slides.map(
+              (slide, index) => (
+                <figure
+                  className={`ael-home-hero__slide${
+                    index === activeSlide
+                      ? " is-active"
+                      : ""
+                  }`}
+                  aria-hidden={
+                    index !== activeSlide
+                  }
+                  key={slide.image}
+                >
+                  <img
+                    src={slide.image}
+                    alt={
+                      index === activeSlide
+                        ? slide.alt
+                        : ""
+                    }
+                  />
+
+                  <figcaption>
+                    {slide.label}
+                  </figcaption>
+                </figure>
+              )
+            )}
+
+            <button
+              className="ael-home-hero__slider-control ael-home-hero__slider-control--previous"
+              type="button"
+              onClick={() =>
+                showSlide(activeSlide - 1)
+              }
+              aria-label="Show previous image"
+            >
+              <ChevronLeft size={22} />
+            </button>
+
+            <button
+              className="ael-home-hero__slider-control ael-home-hero__slider-control--next"
+              type="button"
+              onClick={() =>
+                showSlide(activeSlide + 1)
+              }
+              aria-label="Show next image"
+            >
+              <ChevronRight size={22} />
+            </button>
+
+            <div
+              className="ael-home-hero__slider-dots"
+              aria-label="Choose featured image"
+            >
+              {slides.map(
+                (slide, index) => (
+                  <button
+                    type="button"
+                    className={
+                      index === activeSlide
+                        ? "is-active"
+                        : ""
+                    }
+                    onClick={() =>
+                      showSlide(index)
+                    }
+                    aria-label={`Show image ${
+                      index + 1
+                    } of ${slides.length}`}
+                    aria-current={
+                      index === activeSlide
+                        ? "true"
+                        : undefined
+                    }
+                    key={slide.image}
+                  />
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="ael-home-hero__floating-card">
+            <span className="ael-home-hero__floating-icon">
+              <Globe2 size={22} />
+            </span>
+
+            <div>
+              <strong>
+                {hero.floating_title}
+              </strong>
+
+              <span>
+                {hero.floating_text}
+              </span>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+};
+
+export default HomeHero;

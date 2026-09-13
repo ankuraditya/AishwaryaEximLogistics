@@ -1,0 +1,424 @@
+/* =========================================================
+   QUALITY & COMPLIANCE
+========================================================= */
+
+.ael-quality-hero-visual {
+  position: relative;
+
+  min-height: 390px;
+
+  display: grid;
+  place-items: center;
+}
+
+.ael-quality-hero-visual__shield {
+  width: 210px;
+  height: 210px;
+
+  display: grid;
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(92, 141, 58, 0.25);
+
+  border-radius:
+    var(--ael-radius-2xl);
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--ael-secondary-soft),
+      var(--ael-white)
+    );
+
+  color:
+    var(--ael-secondary-dark);
+
+  box-shadow:
+    var(--ael-shadow-md);
+
+  transform:
+    rotate(4deg);
+}
+
+.ael-quality-hero-visual__card {
+  position: absolute;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 14px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-white);
+
+  box-shadow:
+    var(--ael-shadow-sm);
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.ael-quality-hero-visual__card svg {
+  color:
+    var(--ael-secondary);
+}
+
+.ael-quality-hero-visual__card--one {
+  left: 0;
+  top: 65px;
+}
+
+.ael-quality-hero-visual__card--two {
+  right: 0;
+  top: 135px;
+}
+
+.ael-quality-hero-visual__card--three {
+  left: 10%;
+  bottom: 45px;
+}
+
+
+/* PHILOSOPHY */
+
+.ael-quality-philosophy {
+  background:
+    var(--ael-white);
+}
+
+.ael-quality-philosophy__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1fr);
+
+  gap: 80px;
+}
+
+.ael-quality-philosophy__lead {
+  color:
+    var(--ael-gray-800);
+
+  font-size: 1.08rem;
+}
+
+
+/* PRINCIPLES */
+
+.ael-quality-principles {
+  background:
+    var(--ael-bg-soft);
+}
+
+.ael-quality-principles__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.ael-quality-principle {
+  padding: 27px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-md);
+
+  background:
+    var(--ael-white);
+}
+
+.ael-quality-principle > span {
+  width: 49px;
+  height: 49px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 22px;
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-secondary-soft);
+
+  color:
+    var(--ael-secondary-dark);
+}
+
+.ael-quality-principle h3 {
+  margin-bottom: 10px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.94rem;
+}
+
+.ael-quality-principle p {
+  margin: 0;
+
+  font-size: 0.75rem;
+}
+
+
+/* CHECKPOINTS */
+
+.ael-quality-checkpoints {
+  background:
+    var(--ael-white);
+}
+
+.ael-quality-checkpoints__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  border-top:
+    1px solid
+    var(--ael-border-light);
+
+  border-left:
+    1px solid
+    var(--ael-border-light);
+}
+
+.ael-quality-checkpoint {
+  min-height: 185px;
+
+  display: grid;
+
+  grid-template-columns:
+    42px minmax(0, 1fr);
+
+  gap: 15px;
+
+  padding: 24px;
+
+  border-right:
+    1px solid
+    var(--ael-border-light);
+
+  border-bottom:
+    1px solid
+    var(--ael-border-light);
+}
+
+.ael-quality-checkpoint > span {
+  color:
+    var(--ael-secondary);
+
+  font-size: 0.73rem;
+  font-weight: 800;
+}
+
+.ael-quality-checkpoint h3 {
+  margin-bottom: 8px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.94rem;
+}
+
+.ael-quality-checkpoint p {
+  margin: 0;
+
+  font-size: 0.74rem;
+}
+
+
+/* COMPLIANCE */
+
+.ael-quality-compliance-section {
+  padding: 95px 0;
+
+  background:
+    var(--ael-primary);
+}
+
+.ael-quality-compliance-section__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 0.75fr)
+    minmax(0, 1.25fr);
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+.ael-quality-compliance-section__visual {
+  min-height: 360px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 32px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+
+  border-radius:
+    var(--ael-radius-xl);
+
+  background:
+    rgba(255, 255, 255, 0.045);
+}
+
+.ael-quality-compliance-section__visual svg {
+  margin-bottom: auto;
+
+  color:
+    #a9ce8f;
+}
+
+.ael-quality-compliance-section__visual span {
+  margin-bottom: 7px;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.ael-quality-compliance-section__visual strong {
+  color:
+    var(--ael-white);
+
+  font-size:
+    clamp(1.6rem, 2.5vw, 2.3rem);
+}
+
+.ael-quality-compliance-section__content h2 {
+  color:
+    var(--ael-white);
+
+  font-size:
+    clamp(2rem, 3.3vw, 3.2rem);
+}
+
+.ael-quality-compliance-section__content h2 span {
+  color:
+    #a9ce8f;
+}
+
+.ael-quality-compliance-section__content > p {
+  color:
+    rgba(255, 255, 255, 0.62);
+}
+
+.ael-quality-compliance-section__list {
+  display: grid;
+
+  gap: 10px;
+
+  margin: 25px 0;
+}
+
+.ael-quality-compliance-section__list > div {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color:
+    rgba(255, 255, 255, 0.76);
+
+  font-size: 0.78rem;
+}
+
+.ael-quality-compliance-section__list > div > span {
+  width: 26px;
+  height: 26px;
+
+  flex: 0 0 auto;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(92, 141, 58, 0.26);
+
+  color:
+    #b9d6a5;
+}
+
+.ael-quality-compliance-section__note {
+  padding: 15px;
+
+  border-left:
+    3px solid
+    var(--ael-secondary);
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  font-size: 0.7rem !important;
+}
+
+
+@media (max-width: 991px) {
+  .ael-quality-philosophy__grid,
+  .ael-quality-compliance-section__grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .ael-quality-principles__grid,
+  .ael-quality-checkpoints__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .ael-quality-compliance-section__visual {
+    max-width: 600px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .ael-quality-principles__grid,
+  .ael-quality-checkpoints__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ael-quality-compliance-section {
+    padding: 70px 0;
+  }
+
+  .ael-quality-hero-visual__card {
+    font-size: 0.61rem;
+  }
+}

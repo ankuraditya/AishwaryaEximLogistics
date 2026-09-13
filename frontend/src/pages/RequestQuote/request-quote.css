@@ -1,0 +1,170 @@
+/* =========================================================
+   REQUEST QUOTE PAGE
+========================================================= */
+
+.ael-request-quote-breadcrumb {
+  padding: 16px 0;
+
+  border-bottom:
+    1px solid
+    var(--ael-border-light);
+
+  background:
+    var(--ael-white);
+}
+
+.ael-request-quote {
+  background:
+    var(--ael-bg-soft);
+}
+
+.ael-request-quote__layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    300px;
+
+  align-items: start;
+
+  gap: 28px;
+}
+
+.ael-request-quote__form-column {
+  min-width: 0;
+}
+
+.ael-request-quote__aside {
+  position: sticky;
+
+  top:
+    calc(
+      var(--ael-header-height) +
+      20px
+    );
+
+  display: grid;
+
+  gap: 12px;
+}
+
+.ael-request-quote__aside-card {
+  padding: 22px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-md);
+
+  background:
+    var(--ael-white);
+}
+
+.ael-request-quote__aside-card > span {
+  width: 43px;
+  height: 43px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 17px;
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-primary-soft);
+
+  color:
+    var(--ael-primary);
+}
+
+.ael-request-quote__aside-card h3 {
+  margin-bottom: 8px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.87rem;
+}
+
+.ael-request-quote__aside-card p {
+  margin: 0;
+
+  font-size: 0.69rem;
+}
+
+.ael-request-quote__aside-note {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 17px;
+
+  border:
+    1px solid
+    rgba(92, 141, 58, 0.25);
+
+  border-radius:
+    var(--ael-radius-md);
+
+  background:
+    var(--ael-secondary-soft);
+
+  color:
+    var(--ael-secondary-dark);
+}
+
+.ael-request-quote__aside-note svg {
+  flex: 0 0 auto;
+}
+
+.ael-request-quote__aside-note > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.ael-request-quote__aside-note strong {
+  font-size: 0.7rem;
+}
+
+.ael-request-quote__aside-note span {
+  font-size: 0.63rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 991px) {
+  .ael-request-quote__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .ael-request-quote__aside {
+    position: static;
+
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      );
+  }
+
+  .ael-request-quote__aside-note {
+    grid-column:
+      1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .ael-request-quote__aside {
+    grid-template-columns: 1fr;
+  }
+
+  .ael-request-quote__aside-note {
+    grid-column: auto;
+  }
+}

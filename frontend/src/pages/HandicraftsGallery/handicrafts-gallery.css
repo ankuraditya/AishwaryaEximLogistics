@@ -1,0 +1,265 @@
+/* =========================================================
+   HANDICRAFTS GALLERY PAGE
+========================================================= */
+
+.ael-gallery-breadcrumb {
+  padding: 16px 0;
+
+  border-top:
+    1px solid
+    var(--ael-border-light);
+
+  border-bottom:
+    1px solid
+    var(--ael-border-light);
+
+  background:
+    var(--ael-white);
+}
+
+.ael-handicrafts-gallery {
+  background:
+    var(--ael-white);
+}
+
+.ael-handicrafts-gallery__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 35px;
+
+  margin-bottom: 28px;
+}
+
+.ael-handicrafts-gallery__header
+.ael-section-heading {
+  margin-bottom: 0;
+}
+
+.ael-handicrafts-gallery__result {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: baseline;
+
+  gap: 4px;
+
+  padding-bottom: 5px;
+
+  color:
+    var(--ael-text-secondary);
+
+  font-size: 0.7rem;
+}
+
+.ael-handicrafts-gallery__result strong {
+  color:
+    var(--ael-primary);
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   GALLERY CTA
+========================================================= */
+
+.ael-handicrafts-gallery-cta {
+  padding: 80px 0;
+
+  background:
+    var(--ael-bg-soft);
+}
+
+.ael-handicrafts-gallery-cta__inner {
+  display: grid;
+
+  grid-template-columns:
+    auto minmax(0, 1fr) auto;
+
+  align-items: center;
+
+  gap: 24px;
+
+  padding: 35px 38px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-lg);
+
+  background:
+    var(--ael-white);
+
+  box-shadow:
+    var(--ael-shadow-sm);
+}
+
+.ael-handicrafts-gallery-cta__icon {
+  width: 58px;
+  height: 58px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius:
+    var(--ael-radius-md);
+
+  background:
+    var(--ael-secondary-soft);
+
+  color:
+    var(--ael-secondary-dark);
+}
+
+.ael-handicrafts-gallery-cta__inner
+> div:nth-child(2)
+> span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color:
+    var(--ael-secondary);
+
+  font-size: 0.67rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ael-handicrafts-gallery-cta h2 {
+  margin-bottom: 6px;
+
+  color:
+    var(--ael-primary);
+
+  font-size:
+    clamp(1.4rem, 2.4vw, 2rem);
+}
+
+.ael-handicrafts-gallery-cta p {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-size: 0.75rem;
+}
+
+.ael-handicrafts-gallery-cta__actions {
+  display: grid;
+
+  gap: 8px;
+}
+
+.ael-handicrafts-gallery-cta__actions
+a {
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 9px 15px;
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.ael-handicrafts-gallery-cta__actions
+a:first-child {
+  background:
+    var(--ael-secondary);
+
+  color:
+    var(--ael-white);
+}
+
+.ael-handicrafts-gallery-cta__actions
+a:first-child:hover {
+  background:
+    var(--ael-secondary-dark);
+}
+
+.ael-handicrafts-gallery-cta__actions
+a:last-child {
+  border:
+    1px solid
+    var(--ael-primary);
+
+  color:
+    var(--ael-primary);
+}
+
+.ael-handicrafts-gallery-cta__actions
+a:last-child:hover {
+  background:
+    var(--ael-primary);
+
+  color:
+    var(--ael-white);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+  .ael-handicrafts-gallery-cta__inner {
+    grid-template-columns:
+      auto minmax(0, 1fr);
+  }
+
+  .ael-handicrafts-gallery-cta__actions {
+    grid-column: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .ael-handicrafts-gallery__header {
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+    gap: 12px;
+  }
+
+  .ael-handicrafts-gallery-cta {
+    padding: 60px 0;
+  }
+
+  .ael-handicrafts-gallery-cta__inner {
+    grid-template-columns: 1fr;
+
+    padding: 27px 22px;
+  }
+
+  .ael-handicrafts-gallery-cta__actions {
+    grid-column: auto;
+
+    flex-direction: column;
+  }
+
+  .ael-handicrafts-gallery-cta__actions
+  a {
+    width: 100%;
+  }
+}

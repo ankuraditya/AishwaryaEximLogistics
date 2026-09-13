@@ -1,0 +1,203 @@
+:root {
+  /* =========================================================
+     AISHWARYA EXIM & LOGISTICS — BRAND COLOURS
+  ========================================================= */
+
+  --ael-primary: #022963;
+  --ael-primary-dark: #011d47;
+  --ael-primary-darker: #011534;
+  --ael-primary-light: #eaf1f8;
+  --ael-primary-soft: #f3f7fb;
+
+  --ael-secondary: #5c8d3a;
+  --ael-secondary-dark: #456e2b;
+  --ael-secondary-darker: #345321;
+  --ael-secondary-light: #eaf2e5;
+  --ael-secondary-soft: #f5f9f2;
+
+  /* =========================================================
+     NEUTRAL COLOURS
+  ========================================================= */
+
+  --ael-white: #ffffff;
+
+  --ael-black: #111111;
+
+  --ael-gray-50: #fafbfa;
+  --ael-gray-100: #f5f6f5;
+  --ael-gray-200: #e8ebe7;
+  --ael-gray-300: #d6dad4;
+  --ael-gray-400: #a9afa7;
+  --ael-gray-500: #767d74;
+  --ael-gray-600: #5f665d;
+  --ael-gray-700: #444a42;
+  --ael-gray-800: #2c312b;
+  --ael-gray-900: #191d18;
+
+  /* =========================================================
+     TEXT
+  ========================================================= */
+
+  --ael-text-primary: #151915;
+  --ael-text-secondary: #5f665d;
+  --ael-text-light: #788078;
+  --ael-text-white: #ffffff;
+
+  /* =========================================================
+     BACKGROUNDS
+  ========================================================= */
+
+  --ael-bg-main: #ffffff;
+  --ael-bg-soft: #f7f9f6;
+  --ael-bg-green-soft: #f2f7ef;
+  --ael-bg-blue-soft: #f2f6fa;
+  --ael-bg-dark: #011d47;
+
+  /* =========================================================
+     BORDERS
+  ========================================================= */
+
+  --ael-border-light: #e5e9e3;
+  --ael-border-medium: #d5dbd2;
+
+  /* =========================================================
+     STATUS
+  ========================================================= */
+
+  --ael-success: #2f7d32;
+  --ael-warning: #d99614;
+  --ael-danger: #c93c3c;
+  --ael-info: #2876b7;
+
+  /* =========================================================
+     BRAND GRADIENTS
+  ========================================================= */
+
+  --ael-gradient-primary:
+    linear-gradient(
+      135deg,
+      #022963 0%,
+      #06478d 100%
+    );
+
+  --ael-gradient-green:
+    linear-gradient(
+      135deg,
+      #456e2b 0%,
+      #6da548 100%
+    );
+
+  --ael-gradient-brand:
+    linear-gradient(
+      135deg,
+      #022963 0%,
+      #0b4979 48%,
+      #5c8d3a 100%
+    );
+
+  /* =========================================================
+     TYPOGRAPHY
+  ========================================================= */
+
+  --ael-font-primary:
+    "Manrope",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --ael-font-heading: var(--ael-font-primary);
+
+  --ael-font-size-xs: 0.75rem;
+  --ael-font-size-sm: 0.875rem;
+  --ael-font-size-base: 1rem;
+  --ael-font-size-md: 1.0625rem;
+  --ael-font-size-lg: 1.125rem;
+  --ael-font-size-xl: 1.25rem;
+  --ael-font-size-2xl: 1.5rem;
+  --ael-font-size-3xl: 1.875rem;
+  --ael-font-size-4xl: 2.25rem;
+  --ael-font-size-5xl: 3rem;
+  --ael-font-size-6xl: 3.75rem;
+
+  /* =========================================================
+     CONTAINERS
+  ========================================================= */
+
+  --ael-container: 1320px;
+  --ael-container-lg: 1180px;
+  --ael-container-md: 960px;
+
+  --ael-page-padding: 24px;
+
+  /* =========================================================
+     SPACING
+  ========================================================= */
+
+  --ael-space-1: 4px;
+  --ael-space-2: 8px;
+  --ael-space-3: 12px;
+  --ael-space-4: 16px;
+  --ael-space-5: 20px;
+  --ael-space-6: 24px;
+  --ael-space-8: 32px;
+  --ael-space-10: 40px;
+  --ael-space-12: 48px;
+  --ael-space-16: 64px;
+  --ael-space-20: 80px;
+  --ael-space-24: 96px;
+  --ael-space-28: 112px;
+  --ael-space-32: 128px;
+
+  /* =========================================================
+     BORDER RADIUS
+  ========================================================= */
+
+  --ael-radius-xs: 4px;
+  --ael-radius-sm: 8px;
+  --ael-radius-md: 12px;
+  --ael-radius-lg: 18px;
+  --ael-radius-xl: 24px;
+  --ael-radius-2xl: 32px;
+  --ael-radius-pill: 999px;
+
+  /* =========================================================
+     SHADOWS
+  ========================================================= */
+
+  --ael-shadow-xs:
+    0 2px 8px rgba(2, 41, 99, 0.05);
+
+  --ael-shadow-sm:
+    0 6px 18px rgba(2, 41, 99, 0.08);
+
+  --ael-shadow-md:
+    0 14px 35px rgba(2, 41, 99, 0.1);
+
+  --ael-shadow-lg:
+    0 24px 60px rgba(2, 41, 99, 0.14);
+
+  /* =========================================================
+     TRANSITIONS
+  ========================================================= */
+
+  --ael-transition-fast: 180ms ease;
+  --ael-transition-normal: 300ms ease;
+  --ael-transition-slow: 500ms ease;
+
+  /* =========================================================
+     LAYOUT
+  ========================================================= */
+
+  --ael-header-height: 82px;
+  --ael-topbar-height: 38px;
+
+  /* =========================================================
+     Z-INDEX
+  ========================================================= */
+
+  --ael-z-dropdown: 100;
+  --ael-z-header: 500;
+  --ael-z-overlay: 900;
+  --ael-z-modal: 1000;
+}

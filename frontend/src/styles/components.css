@@ -1,0 +1,406 @@
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.ael-btn {
+  min-height: 50px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 12px 24px;
+
+  border: 1px solid transparent;
+  border-radius: var(--ael-radius-sm);
+
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1;
+
+  transition:
+    transform var(--ael-transition-fast),
+    background-color var(--ael-transition-fast),
+    color var(--ael-transition-fast),
+    border-color var(--ael-transition-fast),
+    box-shadow var(--ael-transition-fast);
+}
+
+.ael-btn:hover {
+  transform: translateY(-2px);
+}
+
+.ael-btn--primary {
+  background: var(--ael-primary);
+  color: var(--ael-white);
+
+  box-shadow: var(--ael-shadow-xs);
+}
+
+.ael-btn--primary:hover {
+  background: var(--ael-primary-dark);
+
+  box-shadow: var(--ael-shadow-sm);
+}
+
+.ael-btn--secondary {
+  background: var(--ael-secondary);
+  color: var(--ael-white);
+}
+
+.ael-btn--secondary:hover {
+  background: var(--ael-secondary-dark);
+}
+
+.ael-btn--outline-primary {
+  border-color: var(--ael-primary);
+
+  background: transparent;
+  color: var(--ael-primary);
+}
+
+.ael-btn--outline-primary:hover {
+  background: var(--ael-primary);
+  color: var(--ael-white);
+}
+
+.ael-btn--white {
+  background: var(--ael-white);
+  color: var(--ael-primary);
+}
+
+.ael-btn--white:hover {
+  background: var(--ael-primary-light);
+}
+
+.ael-btn--lg {
+  min-height: 56px;
+
+  padding: 15px 30px;
+}
+
+.ael-btn--sm {
+  min-height: 42px;
+
+  padding: 10px 18px;
+
+  font-size: 0.875rem;
+}
+
+
+/* =========================================================
+   SHARED PAGE LABEL
+========================================================= */
+
+.ael-home-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 16px;
+
+  color: var(--ael-secondary);
+
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.ael-home-section-label > span {
+  width: 27px;
+  height: 2px;
+
+  background: var(--ael-secondary);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.ael-section-heading {
+  max-width: 720px;
+
+  margin-bottom: 44px;
+}
+
+.ael-section-heading--center {
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.ael-section-heading__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 12px;
+
+  color: var(--ael-secondary);
+
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.ael-section-heading__eyebrow::before {
+  content: "";
+
+  width: 26px;
+  height: 2px;
+
+  background: var(--ael-secondary);
+}
+
+.ael-section-heading--center
+  .ael-section-heading__eyebrow::after {
+  content: "";
+
+  width: 26px;
+  height: 2px;
+
+  background: var(--ael-secondary);
+}
+
+.ael-section-heading__title {
+  margin-bottom: 16px;
+}
+
+.ael-section-heading__description {
+  max-width: 650px;
+
+  margin-bottom: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.ael-section-heading--center
+  .ael-section-heading__description {
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.ael-breadcrumb {
+  width: 100%;
+}
+
+.ael-breadcrumb ol {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.ael-breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--ael-gray-400);
+
+  font-size: 0.7rem;
+}
+
+.ael-breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  color: var(--ael-text-secondary);
+
+  font-weight: 700;
+}
+
+.ael-breadcrumb a:hover {
+  color: var(--ael-primary);
+}
+
+.ael-breadcrumb [aria-current="page"] {
+  color: var(--ael-primary);
+
+  font-weight: 750;
+}
+
+@media (max-width: 767px) {
+  .ael-breadcrumb li {
+    font-size: 0.65rem;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.ael-skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+
+  padding: 10px 14px;
+
+  border-radius: var(--ael-radius-sm);
+
+  background: var(--ael-primary);
+  color: var(--ael-white);
+
+  font-size: 0.75rem;
+  font-weight: 800;
+
+  transform: translateY(-150%);
+
+  transition:
+    transform var(--ael-transition-fast);
+}
+
+.ael-skip-link:focus {
+  transform: translateY(0);
+}
+
+.ael-route-announcer {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+
+  white-space: nowrap;
+}
+
+#main-content:focus {
+  outline: none;
+}
+
+:where(
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  [tabindex]
+):focus-visible {
+  outline:
+    3px solid
+    rgba(92, 141, 58, 0.72);
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   PAGE LOADER
+========================================================= */
+
+.ael-page-loader {
+  min-height: 55vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 11px;
+
+  background: var(--ael-bg-soft);
+  color: var(--ael-primary);
+}
+
+.ael-page-loader span {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.ael-spin {
+  animation:
+    ael-spin
+    0.8s
+    linear
+    infinite;
+}
+
+@keyframes ael-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   ERROR BOUNDARY
+========================================================= */
+
+.ael-error-boundary {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 30px;
+
+  background: var(--ael-bg-soft);
+
+  text-align: center;
+}
+
+.ael-error-boundary > span {
+  width: 74px;
+  height: 74px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 10px;
+
+  border-radius: var(--ael-radius-lg);
+
+  background: var(--ael-primary-soft);
+  color: var(--ael-primary);
+}
+
+.ael-error-boundary h1 {
+  color: var(--ael-primary);
+}
+
+.ael-error-boundary p {
+  max-width: 520px;
+
+  font-size: 0.78rem;
+}
+
+.ael-error-boundary button {
+  margin-top: 8px;
+
+  padding: 10px 15px;
+
+  border-radius: var(--ael-radius-sm);
+
+  background: var(--ael-primary);
+  color: var(--ael-white);
+
+  font-size: 0.72rem;
+  font-weight: 800;
+}

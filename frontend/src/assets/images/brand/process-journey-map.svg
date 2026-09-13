@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-30 555C195 415 344 668 555 514c199-146 366 81 569-53 151-100 296-31 506-182" stroke="#5C8D3A" stroke-width="3" opacity=".18" stroke-dasharray="5 16"/>
+    <path d="M-18 584C198 452 353 696 568 544c192-136 356 81 560-51 150-97 292-35 488-180" stroke="#D58B2B" stroke-width="1.5" opacity=".14"/>
+    <g stroke="#022963" stroke-width="2" opacity=".13">
+      <circle cx="138" cy="119" r="72"/><ellipse cx="138" cy="119" rx="27" ry="72"/><path d="M66 119h144M78 84h120M78 154h120"/>
+      <path d="M1365 102h151l-13 101h-125l-13-101ZM1390 102l19-39h66l19 39M1400 132h78M1394 161h90"/>
+      <path d="M91 650h173M117 650l21-48h79l21 48M150 602v-35h54v35"/>
+    </g>
+    <g stroke="#5C8D3A" stroke-width="2" opacity=".17">
+      <path d="M1219 617c57-68 132-68 189 0-57 68-132 68-189 0Z"/><circle cx="1272" cy="612" r="5"/><path d="m1408 617 57-42-13 42 13 42-57-42Z"/>
+      <path d="M762 72c-26 35-22 70 10 94 32-25 36-60 10-94-6 22-13 36-20 42-7-6-14-20-20-42"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,577 @@
+/* =========================================================
+   GLOBAL REACH
+========================================================= */
+
+.ael-global-hero-visual {
+  position: relative;
+
+  min-height: 390px;
+
+  display: grid;
+  place-items: center;
+}
+
+.ael-global-hero-visual__globe {
+  position: relative;
+
+  width: 260px;
+  height: 260px;
+
+  display: grid;
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(2, 41, 99, 0.14);
+
+  border-radius: 50%;
+
+  color:
+    var(--ael-primary);
+}
+
+.ael-global-hero-visual__ring {
+  position: absolute;
+
+  border:
+    1px solid
+    rgba(92, 141, 58, 0.42);
+
+  border-radius: 50%;
+}
+
+.ael-global-hero-visual__ring--one {
+  width: 325px;
+  height: 150px;
+
+  transform:
+    rotate(23deg);
+}
+
+.ael-global-hero-visual__ring--two {
+  width: 150px;
+  height: 325px;
+
+  transform:
+    rotate(-32deg);
+}
+
+.ael-global-hero-visual__origin,
+.ael-global-hero-visual__message {
+  position: absolute;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-white);
+
+  box-shadow:
+    var(--ael-shadow-sm);
+}
+
+.ael-global-hero-visual__origin {
+  left: 0;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 11px 14px;
+
+  color:
+    var(--ael-secondary);
+}
+
+.ael-global-hero-visual__origin > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ael-global-hero-visual__origin strong {
+  color:
+    var(--ael-primary);
+
+  font-size: 0.76rem;
+}
+
+.ael-global-hero-visual__origin span {
+  font-size: 0.65rem;
+}
+
+.ael-global-hero-visual__message {
+  right: 0;
+  top: 58px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 10px 13px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+
+/* POSITIONING */
+
+.ael-global-positioning {
+  background:
+    var(--ael-white);
+}
+
+.ael-global-positioning__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1fr);
+
+  gap: 80px;
+}
+
+.ael-global-positioning__lead {
+  color:
+    var(--ael-gray-800);
+
+  font-size: 1.08rem;
+}
+
+
+/* NEEDS */
+
+.ael-global-needs {
+  background:
+    var(--ael-bg-soft);
+}
+
+.ael-global-needs__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.ael-global-need-card {
+  padding: 27px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-md);
+
+  background:
+    var(--ael-white);
+}
+
+.ael-global-need-card > span {
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 24px;
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-primary-soft);
+
+  color:
+    var(--ael-primary);
+}
+
+.ael-global-need-card h3 {
+  margin-bottom: 9px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.94rem;
+}
+
+.ael-global-need-card p {
+  margin: 0;
+
+  font-size: 0.75rem;
+}
+
+
+/* NETWORK */
+
+.ael-global-network {
+  padding: 95px 0;
+
+  background:
+    var(--ael-primary);
+}
+
+.ael-global-network__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(350px, 0.85fr)
+    minmax(0, 1.15fr);
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+.ael-global-network__visual {
+  position: relative;
+
+  min-height: 390px;
+
+  display: grid;
+  place-items: center;
+}
+
+.ael-global-network__world {
+  width: 240px;
+  height: 240px;
+
+  display: grid;
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.13);
+
+  border-radius: 50%;
+
+  color:
+    rgba(255, 255, 255, 0.78);
+}
+
+.ael-global-network__node {
+  position: absolute;
+
+  width: 11px;
+  height: 11px;
+
+  border:
+    3px solid
+    var(--ael-primary);
+
+  border-radius: 50%;
+
+  background:
+    #a9ce8f;
+
+  box-shadow:
+    0 0 0 6px
+    rgba(169, 206, 143, 0.12);
+}
+
+.ael-global-network__node--one {
+  left: 19%;
+  top: 24%;
+}
+
+.ael-global-network__node--two {
+  right: 17%;
+  top: 30%;
+}
+
+.ael-global-network__node--three {
+  left: 28%;
+  bottom: 20%;
+}
+
+.ael-global-network__node--four {
+  right: 26%;
+  bottom: 18%;
+}
+
+.ael-global-network__origin {
+  position: absolute;
+
+  bottom: 15px;
+
+  padding: 8px 12px;
+
+  border-radius:
+    var(--ael-radius-pill);
+
+  background:
+    var(--ael-secondary);
+
+  color:
+    var(--ael-white);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.ael-global-network__content h2 {
+  color:
+    var(--ael-white);
+
+  font-size:
+    clamp(2rem, 3.4vw, 3.3rem);
+}
+
+.ael-global-network__content h2 span {
+  color:
+    #a9ce8f;
+}
+
+.ael-global-network__content > p {
+  color:
+    rgba(255, 255, 255, 0.62);
+}
+
+.ael-global-network__future {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 24px;
+  padding: 10px 13px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    rgba(255, 255, 255, 0.045);
+
+  color:
+    #b9d6a5;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+
+/* BUYERS */
+
+.ael-global-buyers {
+  background:
+    var(--ael-white);
+}
+
+.ael-global-buyers__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.8fr)
+    minmax(0, 1.2fr);
+
+  align-items: center;
+
+  gap: 75px;
+}
+
+.ael-global-buyers h2 {
+  color:
+    var(--ael-primary);
+
+  font-size:
+    clamp(2rem, 3.3vw, 3.15rem);
+}
+
+.ael-global-buyers h2 span {
+  color:
+    var(--ael-secondary);
+}
+
+.ael-global-buyers__list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.ael-global-buyers__list > div {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  min-height: 54px;
+
+  padding: 12px 15px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-bg-soft);
+
+  color:
+    var(--ael-gray-700);
+
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.ael-global-buyers__list svg {
+  color:
+    var(--ael-secondary);
+}
+
+
+/* PROCESS */
+
+.ael-global-process {
+  background:
+    var(--ael-bg-soft);
+}
+
+.ael-global-process__flow {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 8px;
+}
+
+.ael-global-process__item {
+  position: relative;
+
+  min-height: 145px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 18px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-white);
+}
+
+.ael-global-process__item > span {
+  margin-bottom: auto;
+
+  color:
+    var(--ael-secondary);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.ael-global-process__item strong {
+  color:
+    var(--ael-primary);
+
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.ael-global-process__item > svg {
+  position: absolute;
+
+  right: -13px;
+  top: 50%;
+
+  z-index: 2;
+
+  width: 26px;
+  height: 26px;
+
+  padding: 5px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius: 50%;
+
+  background:
+    var(--ael-bg-soft);
+
+  color:
+    var(--ael-secondary);
+}
+
+
+@media (max-width: 991px) {
+  .ael-global-positioning__grid,
+  .ael-global-network__grid,
+  .ael-global-buyers__grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .ael-global-needs__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .ael-global-process__flow {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .ael-global-process__item > svg {
+    display: none;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .ael-global-needs__grid,
+  .ael-global-buyers__list,
+  .ael-global-process__flow {
+    grid-template-columns: 1fr;
+  }
+
+  .ael-global-network {
+    padding: 70px 0;
+  }
+
+  .ael-global-hero-visual__globe {
+    width: 210px;
+    height: 210px;
+  }
+
+  .ael-global-hero-visual__ring--one {
+    width: 260px;
+    height: 130px;
+  }
+
+  .ael-global-hero-visual__ring--two {
+    width: 130px;
+    height: 260px;
+  }
+}

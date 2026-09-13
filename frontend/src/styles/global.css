@@ -1,0 +1,116 @@
+html {
+  overflow-x: hidden;
+
+  scroll-padding-top:
+    calc(
+      var(--ael-header-height) + 20px
+    );
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background: var(--ael-bg-main);
+  color: var(--ael-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  transition:
+    color var(--ael-transition-fast),
+    background-color var(--ael-transition-fast),
+    border-color var(--ael-transition-fast),
+    opacity var(--ael-transition-fast);
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  color: var(--ael-text-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--ael-gray-400);
+}
+
+img {
+  height: auto;
+}
+
+.ael-section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.ael-section--soft {
+  background: var(--ael-bg-soft);
+}
+
+.ael-section--blue-soft {
+  background: var(--ael-bg-blue-soft);
+}
+
+.ael-section--green-soft {
+  background: var(--ael-bg-green-soft);
+}
+
+.ael-section--dark {
+  background: var(--ael-bg-dark);
+  color: var(--ael-white);
+}
+
+@media (max-width: 991px) {
+  .ael-section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .ael-section {
+    padding: 64px 0;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (
+  prefers-reduced-motion:
+    reduce
+) {
+  html {
+    scroll-behavior:
+      auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.01ms !important;
+
+    scroll-behavior:
+      auto !important;
+  }
+}

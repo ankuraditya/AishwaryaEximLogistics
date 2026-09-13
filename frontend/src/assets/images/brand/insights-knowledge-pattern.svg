@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- open book -->
+    <g transform="translate(26 80)" stroke="#022963" stroke-width="2.2" opacity=".14"><path d="M32 52c61-20 114-5 158 45v190c-44-50-97-65-158-45V52ZM348 52c-61-20-114-5-158 45v190c44-50 97-65 158-45V52Z"/><path d="M55 91c41-8 76 4 106 34M55 130c41-8 76 4 106 34M55 169c41-8 76 4 106 34M325 91c-41-8-76 4-106 34M325 130c-41-8-76 4-106 34M325 169c-41-8-76 4-106 34"/></g>
+    <!-- trade globe -->
+    <g transform="translate(1292 60)" stroke="#5C8D3A" stroke-width="2.2" opacity=".2"><circle cx="128" cy="128" r="111"/><ellipse cx="128" cy="128" rx="44" ry="111"/><path d="M17 128h222M36 77h184M36 179h184"/><path d="M29 45c78-49 159-50 235-4M247 30l19 12-22 9" stroke="#D58B2B"/></g>
+    <!-- pen and document -->
+    <g transform="translate(36 492)" stroke="#5C8D3A" stroke-width="2.2" opacity=".17"><rect x="25" y="8" width="225" height="178" rx="17"/><path d="M60 51h127M60 87h154M60 123h102M176 158l87-87 24 24-87 87-33 10 9-34Z"/></g>
+    <!-- lightbulb / idea -->
+    <g transform="translate(1348 502)" stroke="#D58B2B" stroke-width="2.2" opacity=".2"><path d="M104 18c-54 0-82 65-45 103 18 19 24 30 24 54h42c0-24 6-35 24-54 37-38 9-103-45-103Z"/><path d="M85 199h38M90 219h28M104 18V0M27 42 12 27M181 42l15-15M20 103H0M188 103h20"/><path d="M81 103c15-16 31-16 46 0-15 16-31 16-46 0Z"/></g>
+    <path d="M410 81h776M410 684h776" stroke="#5C8D3A" opacity=".1" stroke-width="2" stroke-dasharray="3 14"/>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" fill="none">
+  <defs>
+    <linearGradient id="mapFill" x1="450" y1="60" x2="610" y2="485" gradientUnits="userSpaceOnUse"><stop stop-color="#B8D79F" stop-opacity=".32"/><stop offset="1" stop-color="#5C8D3A" stop-opacity=".07"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <g opacity=".55"><circle cx="353" cy="280" r="244" stroke="#7EAA5E" stroke-dasharray="3 14"/><circle cx="353" cy="280" r="215" stroke="#fff" stroke-opacity=".12"/></g>
+
+  <!-- Bihar heritage medallion -->
+  <g transform="translate(35 92)" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="187" cy="190" r="157" fill="#fff" fill-opacity=".035" stroke="#A9CE8F" stroke-opacity=".5"/>
+    <!-- Mahabodhi temple -->
+    <g stroke="#D9A64B" stroke-width="2.4">
+      <path d="M155 286h85M164 286v-91h67v91M173 195l25-88 25 88M183 195l15-61 15 61M178 219h40M174 242h48M171 264h54"/>
+      <path d="M189 286v-31h18v31M158 215h-21v71h27M232 215h21v71h-22M141 215l11-28 11 28M233 215l10-28 10 28"/>
+      <circle cx="198" cy="150" r="5"/><path d="M190 175h16M187 183h22"/>
+    </g>
+    <!-- Ashoka pillar -->
+    <g transform="translate(70 160)" stroke="#A9CE8F" stroke-width="2.2">
+      <path d="M16 123h52M25 113h34M31 103h22M36 32h12v71M30 32h24M34 23h16"/>
+      <path d="M29 22c-7-11 0-21 9-16 4-10 15-8 16 2 10-3 16 8 9 15H29Z"/>
+      <circle cx="42" cy="51" r="8"/><path d="M42 43v16M34 51h16"/>
+    </g>
+    <!-- Nalanda arch -->
+    <g transform="translate(246 190)" stroke="#A9CE8F" stroke-width="2.2">
+      <path d="M0 96h70M7 96V32h56v64M18 96V57c0-23 34-23 34 0v39M1 32h68L56 14H14L1 32Z"/>
+      <path d="M15 43h8M47 43h8M14 76h8M48 76h8"/>
+    </g>
+    <!-- Madhubani fish -->
+    <g transform="translate(86 55) rotate(-10 54 30)" stroke="#A9CE8F" stroke-width="2.2">
+      <path d="M0 30c31-37 72-37 103 0-31 37-72 37-103 0Z"/><circle cx="27" cy="27" r="4"/><path d="m103 30 34-25-7 25 7 25-34-25ZM43 30c14-14 31-14 45 0-14 14-31 14-45 0Z"/>
+    </g>
+    <!-- Litchi/leaf cluster -->
+    <g transform="translate(250 63)" stroke="#D9A64B" stroke-width="2">
+      <path d="M35 72C29 40 39 17 64 2M39 41C17 38 5 25 2 4c22 3 35 15 37 37ZM47 27c20-3 34-14 40-34-21 0-35 11-40 34Z"/>
+      <circle cx="31" cy="74" r="10"/><circle cx="52" cy="68" r="10"/><circle cx="43" cy="87" r="10"/>
+    </g>
+  </g>
+
+  <!-- route from Bihar to India -->
+  <path d="M341 282c54-31 97-37 139-12" stroke="#D9A64B" stroke-width="2.5" stroke-dasharray="5 10"/>
+  <circle cx="341" cy="282" r="7" fill="#D9A64B"/><circle cx="480" cy="270" r="12" fill="#A9CE8F" fill-opacity=".2" filter="url(#glow)"/><circle cx="480" cy="270" r="6" fill="#A9CE8F"/>
+
+  <!-- stylised India map -->
+  <g transform="translate(407 37)">
+    <path d="M112 13 95 35 72 39 61 58 38 68 43 87 29 102 48 119 37 138 50 157 63 167 57 191 72 207 81 235 102 251 109 278 127 296 137 329 153 344 158 380 172 407 181 449 195 473 207 447 218 422 224 390 239 365 251 329 269 309 264 279 283 258 276 230 294 208 284 184 301 166 290 141 269 132 264 109 241 101 228 80 204 73 193 51 169 50 156 28 136 33 112 13Z" fill="url(#mapFill)" stroke="#F5F7F3" stroke-width="3"/>
+    <path d="M87 222c35-13 71-11 108 6" stroke="#D9A64B" stroke-width="3" stroke-dasharray="4 8"/>
+    <circle cx="126" cy="218" r="8" fill="#D9A64B"/><circle cx="126" cy="218" r="17" stroke="#D9A64B" stroke-opacity=".38"/>
+    <!-- Bihar highlight -->
+    <path d="m98 203 29-8 31 7 16 17-21 15-37-2-21-13 3-16Z" fill="#D9A64B" fill-opacity=".42" stroke="#F4C56F" stroke-width="2"/>
+    <!-- export arcs -->
+    <path d="M192 324c81-27 120-69 118-126M310 198l-5 24-18-16M202 352c91 6 142-16 170-71M372 281l-14 20-11-22" stroke="#A9CE8F" stroke-width="2.3"/>
+  </g>
+
+  <g fill="#fff" fill-opacity=".9" font-family="Arial, sans-serif">
+    <text x="142" y="465" font-size="16" font-weight="700" letter-spacing="2">BIHAR HERITAGE</text>
+    <text x="518" y="520" font-size="16" font-weight="700" letter-spacing="2">INDIA</text>
+  </g>
+</svg>

@@ -1,0 +1,396 @@
+/* =========================================================
+   EXPORT & LOGISTICS
+========================================================= */
+
+.ael-export-hero-visual {
+  position: relative;
+
+  min-height: 390px;
+
+  display: grid;
+  place-items: center;
+}
+
+.ael-export-hero-visual__globe {
+  position: relative;
+
+  width: 260px;
+  height: 260px;
+
+  display: grid;
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(2, 41, 99, 0.16);
+
+  border-radius: 50%;
+
+  color:
+    var(--ael-primary);
+}
+
+.ael-export-hero-visual__orbit {
+  position: absolute;
+
+  border:
+    1px solid
+    rgba(92, 141, 58, 0.4);
+
+  border-radius: 50%;
+}
+
+.ael-export-hero-visual__orbit--one {
+  width: 325px;
+  height: 160px;
+
+  transform:
+    rotate(24deg);
+}
+
+.ael-export-hero-visual__orbit--two {
+  width: 160px;
+  height: 325px;
+
+  transform:
+    rotate(-34deg);
+}
+
+.ael-export-hero-visual__india,
+.ael-export-hero-visual__shipment {
+  position: absolute;
+
+  padding: 12px 15px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-white);
+
+  box-shadow:
+    var(--ael-shadow-sm);
+}
+
+.ael-export-hero-visual__india {
+  left: 3%;
+  bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.ael-export-hero-visual__india strong {
+  color:
+    var(--ael-primary);
+
+  font-size: 0.8rem;
+}
+
+.ael-export-hero-visual__india span {
+  color:
+    var(--ael-secondary);
+
+  font-size: 0.68rem;
+}
+
+.ael-export-hero-visual__shipment {
+  right: 0;
+  top: 45px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+
+/* INTRO */
+
+.ael-export-intro {
+  background:
+    var(--ael-white);
+}
+
+.ael-export-intro__grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1fr);
+
+  gap: 80px;
+}
+
+.ael-export-intro__lead {
+  color:
+    var(--ael-gray-800);
+
+  font-size: 1.08rem;
+}
+
+
+/* CAPABILITIES */
+
+.ael-export-capabilities {
+  background:
+    var(--ael-bg-soft);
+}
+
+.ael-export-capabilities__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 17px;
+}
+
+.ael-export-capability {
+  padding: 29px;
+
+  border:
+    1px solid
+    var(--ael-border-light);
+
+  border-radius:
+    var(--ael-radius-md);
+
+  background:
+    var(--ael-white);
+}
+
+.ael-export-capability > span {
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 22px;
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    var(--ael-primary-soft);
+
+  color:
+    var(--ael-primary);
+}
+
+.ael-export-capability h3 {
+  margin-bottom: 9px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 0.96rem;
+}
+
+.ael-export-capability p {
+  margin: 0;
+
+  font-size: 0.76rem;
+}
+
+
+/* PROCESS */
+
+.ael-export-process {
+  background:
+    var(--ael-white);
+}
+
+.ael-export-process__list {
+  border-top:
+    1px solid
+    var(--ael-border-light);
+}
+
+.ael-export-process__item {
+  display: grid;
+
+  grid-template-columns:
+    100px minmax(0, 1fr);
+
+  gap: 25px;
+
+  padding: 25px 0;
+
+  border-bottom:
+    1px solid
+    var(--ael-border-light);
+}
+
+.ael-export-process__item > span {
+  color:
+    var(--ael-secondary);
+
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.ael-export-process__item h3 {
+  margin-bottom: 6px;
+
+  color:
+    var(--ael-primary);
+
+  font-size: 1rem;
+}
+
+.ael-export-process__item p {
+  margin: 0;
+
+  max-width: 780px;
+
+  font-size: 0.77rem;
+}
+
+
+/* DOCUMENTATION */
+
+.ael-export-documentation {
+  padding: 90px 0;
+
+  background:
+    var(--ael-primary);
+}
+
+.ael-export-documentation__inner {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  align-items: center;
+
+  gap: 75px;
+}
+
+.ael-export-documentation h2 {
+  color:
+    var(--ael-white);
+
+  font-size:
+    clamp(2rem, 3.2vw, 3.1rem);
+}
+
+.ael-export-documentation h2 span {
+  color:
+    #a9ce8f;
+}
+
+.ael-export-documentation p {
+  color:
+    rgba(255, 255, 255, 0.63);
+}
+
+.ael-export-documentation__cards {
+  display: grid;
+
+  gap: 11px;
+}
+
+.ael-export-documentation__cards > div {
+  display: grid;
+
+  grid-template-columns:
+    auto minmax(0, 1fr);
+
+  align-items: center;
+
+  gap:
+    3px 12px;
+
+  padding: 18px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius:
+    var(--ael-radius-sm);
+
+  background:
+    rgba(255, 255, 255, 0.045);
+}
+
+.ael-export-documentation__cards svg {
+  grid-row:
+    1 / 3;
+
+  color:
+    #a9ce8f;
+}
+
+.ael-export-documentation__cards strong {
+  color:
+    var(--ael-white);
+
+  font-size: 0.8rem;
+}
+
+.ael-export-documentation__cards span {
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-size: 0.7rem;
+}
+
+
+@media (max-width: 991px) {
+  .ael-export-intro__grid,
+  .ael-export-documentation__inner {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .ael-export-capabilities__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 767px) {
+  .ael-export-hero-visual__globe {
+    width: 210px;
+    height: 210px;
+  }
+
+  .ael-export-hero-visual__orbit--one {
+    width: 265px;
+    height: 130px;
+  }
+
+  .ael-export-hero-visual__orbit--two {
+    width: 130px;
+    height: 265px;
+  }
+
+  .ael-export-capabilities__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ael-export-process__item {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .ael-export-documentation {
+    padding: 70px 0;
+  }
+}
