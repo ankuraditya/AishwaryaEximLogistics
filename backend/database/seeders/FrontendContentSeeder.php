@@ -193,7 +193,11 @@ class FrontendContentSeeder extends Seeder
     private function seedImage(int $number, string $title): ?Media
     {
         $filename = 'handicraft-'.str_pad((string) $number, 2, '0', STR_PAD_LEFT).'.webp';
-        $source = base_path('../aishwarya-frontend-exim-logistics/src/assets/images/handicrafts/'.$filename);
+        $source = database_path('seeders/assets/handicrafts/'.$filename);
+
+        if (! is_file($source)) {
+            $source = base_path('../aishwarya-frontend-exim-logistics/src/assets/images/handicrafts/'.$filename);
+        }
         if (! is_file($source)) {
             return null;
         }
