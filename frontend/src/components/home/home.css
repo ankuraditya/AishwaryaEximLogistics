@@ -3787,6 +3787,103 @@
 }
 
 
+/* Full-bleed CMS banner; scoped to preserve other homepage sections. */
+.ael-home-hero.ael-home-hero--banner {
+  min-height: 570px;
+  padding: 58px 0 85px;
+  background: #061e3c;
+}
+.ael-home-hero--banner .ael-home-hero__container {
+  position: static;
+  display: block;
+}
+.ael-home-hero--banner .ael-home-hero__content {
+  position: relative;
+  z-index: 4;
+  max-width: 660px;
+  pointer-events: none;
+}
+.ael-home-hero--banner .ael-home-hero__actions { pointer-events: auto; }
+.ael-home-hero--banner h1 { color: #fff; font-size: clamp(2rem, 3.2vw, 3.35rem); line-height: 1.12; }
+.ael-home-hero--banner .ael-home-hero__description { color: #e0e8ef; }
+.ael-home-hero--banner .ael-home-hero__eyebrow {
+  color: #d2e9b8;
+  background: rgba(92, 141, 58, .22);
+  border-color: rgba(210, 233, 184, .4);
+}
+.ael-home-hero--banner .ael-home-hero__actions .ael-btn {
+  border-color: #fff;
+  background: #fff;
+  color: #082b59;
+}
+.ael-home-hero--banner .ael-home-hero__features { border-color: rgba(255,255,255,.23); }
+.ael-home-hero--banner .ael-home-hero__features > div { color: #e0e8ef; }
+.ael-home-hero--banner .ael-home-hero__features svg { color: #b5d78d; }
+.ael-home-hero--banner .ael-home-hero__visual {
+  position: absolute;
+  inset: 0;
+  min-height: 0;
+  z-index: 1;
+}
+.ael-home-hero--banner .ael-home-hero__slider {
+  inset: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: #061e3c;
+}
+.ael-home-hero--banner .ael-home-hero__slide img { object-position: center 48%; }
+.ael-home-hero--banner .ael-home-hero__slide::after {
+  background: linear-gradient(90deg, rgba(3,20,43,.12), transparent 60%);
+}
+.ael-home-hero--banner h1 { text-shadow: 0 2px 16px rgba(3,20,43,.35); }
+.ael-home-hero--banner .ael-home-hero__description { text-shadow: 0 1px 8px rgba(3,20,43,.5); }
+.ael-home-hero--banner .ael-home-hero__slide figcaption { left: 24px; right: 150px; bottom: 42px; }
+.ael-home-hero--banner .ael-home-hero__slider-control { top: auto; bottom: 78px; transform: none; }
+.ael-home-hero--banner .ael-home-hero__slider-control--previous { left: auto; right: 86px; }
+.ael-home-hero--banner .ael-home-hero__slider-control--next { right: 30px; }
+.ael-home-hero--banner .ael-home-hero__slider-dots { right: 45px; bottom: 45px; }
+.ael-home-hero--banner .ael-home-hero__floating-card,
+.ael-home-hero--banner .ael-home-hero__mithila-pattern,
+.ael-home-hero--banner .ael-home-hero__decoration { display: none; }
+.ael-home-hero--banner .ael-home-hero__folk-border { z-index: 5; }
+@media (max-width: 767px) {
+  .ael-home-hero.ael-home-hero--banner {
+    min-height: 0;
+    min-height: clamp(220px, 57vw, 350px);
+    padding: 24px 0 40px;
+    align-items: center;
+  }
+  .ael-home-hero--banner .ael-home-hero__container { padding-inline: 14px; }
+  .ael-home-hero--banner .ael-home-hero__content { max-width: 53%; text-align: left; }
+  .ael-home-hero--banner .ael-home-hero__description,
+  .ael-home-hero--banner .ael-home-hero__features,
+  .ael-home-hero--banner .ael-home-hero__slide figcaption { display: none; }
+  .ael-home-hero--banner .ael-home-hero__slide { transform: none; }
+  .ael-home-hero--banner .ael-home-hero__slide img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .ael-home-hero--banner .ael-home-hero__slide::after { background: linear-gradient(90deg, rgba(3,20,43,.2), transparent 55%); }
+  .ael-home-hero--banner h1 { font-size: clamp(1rem, 4.2vw, 1.8rem); line-height: 1.2; margin-bottom: 12px; }
+  .ael-home-hero--banner .ael-home-hero__eyebrow { font-size: clamp(.45rem, 1.4vw, .65rem); padding: 4px 6px; gap: 3px; margin-bottom: 10px; }
+  .ael-home-hero--banner .ael-home-hero__eyebrow svg { width: 10px; height: 10px; }
+  .ael-home-hero--banner .ael-home-hero__actions { margin: 0; gap: 7px; flex-direction: row; flex-wrap: wrap; }
+  .ael-home-hero--banner .ael-home-hero__actions > .ael-btn { width: auto; min-height: 32px; padding: 7px 10px; font-size: clamp(.55rem, 1.8vw, .8rem); gap: 3px; }
+  .ael-home-hero--banner .ael-home-hero__actions svg { width: 10px; }
+  .ael-home-hero--banner .ael-home-hero__description { font-size: clamp(.55rem, 1.8vw, .8rem); line-height: 1.5; margin-bottom: 12px; }
+  .ael-home-hero--banner .ael-home-hero__features { padding-top: 8px; gap: 5px; }
+  .ael-home-hero--banner .ael-home-hero__features > div { font-size: clamp(.4rem, 1.25vw, .6rem); gap: 3px; }
+  .ael-home-hero--banner .ael-home-hero__features svg { width: 9px; height: 9px; }
+  .ael-home-hero--banner .ael-home-hero__slide figcaption { left: 14px; right: 100px; bottom: 17px; font-size: .4rem; }
+  .ael-home-hero--banner .ael-home-hero__slider-control { width: 24px; height: 24px; bottom: 25px; }
+  .ael-home-hero--banner .ael-home-hero__slider-control--previous { right: 48px; }
+  .ael-home-hero--banner .ael-home-hero__slider-control--next { right: 14px; }
+  .ael-home-hero--banner .ael-home-hero__slider-dots { right: 20px; bottom: 12px; }
+  .ael-home-hero--banner .ael-home-hero__folk-border { height: 5px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .ael-home-hero__slide {
     transition: none;

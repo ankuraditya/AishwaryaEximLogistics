@@ -136,7 +136,7 @@
 }
 
 .ael-header-logo {
-  width: 228px;
+  width: 255px;
   justify-self: start;
 }
 
@@ -185,7 +185,7 @@
 
   color: var(--ael-gray-800);
 
-  font-size: 0.79rem;
+  font-size: 0.9rem;
   font-weight: 700;
 
   white-space: nowrap;
@@ -287,11 +287,11 @@ button.ael-desktop-nav__link {
 }
 
 .ael-header-quote {
-  min-height: 44px;
+  min-height: 50px;
 
-  padding-inline: 18px;
+  padding-inline: 22px;
 
-  font-size: 0.83rem;
+  font-size: 0.95rem;
 }
 
 .ael-header-mobile-actions {
@@ -1176,13 +1176,13 @@ button.ael-desktop-nav__link {
 
 @media (max-width: 1279px) {
   .ael-header-logo {
-    width: 205px;
+    width: 220px;
   }
 
   .ael-desktop-nav__link {
     padding-inline: 8px;
 
-    font-size: 0.75rem;
+    font-size: 0.82rem;
   }
 
   .ael-header-quote {
@@ -1209,7 +1209,7 @@ button.ael-desktop-nav__link {
   }
 
   .ael-header-logo {
-    width: 220px;
+    width: 245px;
   }
 
   .ael-header-mobile-actions {
@@ -1260,7 +1260,7 @@ button.ael-desktop-nav__link {
   }
 
   .ael-header-logo {
-    width: min(195px, 57vw);
+    width: min(215px, 57vw);
   }
 
   .ael-search-overlay__panel {
@@ -1302,7 +1302,7 @@ button.ael-desktop-nav__link {
 
 @media (max-width: 420px) {
   .ael-header-logo {
-    width: 175px;
+    width: min(195px, 55vw);
   }
 
   .ael-header-mobile-search,

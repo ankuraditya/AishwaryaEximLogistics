@@ -17,9 +17,9 @@ import Container from "../common/Container";
 import { useCmsSection } from "../../hooks/useCmsSection";
 import { mediaUrl } from "../../utils/media";
 
-import handicraft01 from "../../assets/images/handicrafts/handicraft-01.webp";
-import handicraft03 from "../../assets/images/handicrafts/handicraft-03.webp";
-import handicraft06 from "../../assets/images/handicrafts/handicraft-06.webp";
+import handicraft01 from "../../assets/images/banners/hero-handicrafts.png";
+import handicraft03 from "../../assets/images/banners/hero-mithila.png";
+import handicraft06 from "../../assets/images/banners/hero-global-products.png";
 
 const heroSlides = [
   {
@@ -31,11 +31,25 @@ const heroSlides = [
     image: handicraft03,
     alt: "Traditional Indian handicraft tote bag",
     label: "Distinctive folk-art products",
+    eyebrow: "Indian Handicrafts • Timeless Artistry",
+    heading: "Traditional Indian Artistry, Made for Modern Buyers.",
+    body: "Discover hand-painted bags, accessories and Mithila-inspired folk-art products that bring distinctive Indian craftsmanship to your collection.",
+    primary_button: "Explore Handicrafts",
+    primary_link: "/products/handicrafts",
+    secondary_button: "View Our Gallery",
+    secondary_link: "/handicrafts-gallery",
   },
   {
     image: handicraft06,
     alt: "Collection of hand-painted Indian handbags",
     label: "Created for global buyers",
+    eyebrow: "From Bihar, India • To the World",
+    heading: "Your Indian Sourcing Partner for Global Business.",
+    body: "Share your product, quantity and destination requirements. Our team helps organise buyer-focused sourcing discussions and export-oriented coordination.",
+    primary_button: "Request a Quote",
+    primary_link: "/request-a-quote",
+    secondary_button: "Explore Global Reach",
+    secondary_link: "/global-reach",
   },
 ];
 
@@ -65,6 +79,9 @@ const HomeHero = () => {
 
   const [isPaused, setIsPaused] =
     useState(false);
+  // Slide fields override section defaults, so older CMS slides remain compatible.
+  const currentSlide = activeSlide % slides.length;
+  const banner = { ...hero, ...slides[currentSlide] };
 
   useEffect(() => {
     if (
@@ -84,7 +101,7 @@ const HomeHero = () => {
             slides.length
         );
       },
-      5000
+      2500
     );
 
     return () =>
@@ -99,7 +116,7 @@ const HomeHero = () => {
   };
 
   return (
-    <section className="ael-home-hero">
+    <section className="ael-home-hero ael-home-hero--banner">
       <div
         className="ael-home-hero__mithila-pattern"
         aria-hidden="true"
@@ -114,37 +131,37 @@ const HomeHero = () => {
       <div className="ael-home-hero__decoration ael-home-hero__decoration--two" />
 
       <Container className="ael-home-hero__container">
-        <div className="ael-home-hero__content">
+        <div className="ael-home-hero__content" key={currentSlide}>
           <div className="ael-home-hero__eyebrow">
             <Globe2 size={16} />
 
             <span>
-              {hero.eyebrow}
+              {banner.eyebrow}
             </span>
           </div>
 
-          <h1>{hero.heading}</h1>
+          <h1>{banner.heading}</h1>
 
           <p className="ael-home-hero__description">
-            {hero.body}
+            {banner.body}
           </p>
 
           <div className="ael-home-hero__actions">
             <Button
-              to="/products"
+              to={banner.primary_link || "/products"}
               size="lg"
             >
-              {hero.primary_button}
+              {banner.primary_button}
 
               <ArrowRight size={18} />
             </Button>
 
             <Button
-              to="/request-a-quote"
+              to={banner.secondary_link || "/request-a-quote"}
               variant="outline-primary"
               size="lg"
             >
-              {hero.secondary_button}
+              {banner.secondary_button}
             </Button>
           </div>
 
@@ -153,7 +170,7 @@ const HomeHero = () => {
               <PackageCheck size={18} />
 
               <span>
-                {hero.features?.[0] || heroFallback.features[0]}
+                {banner.features?.[0] || heroFallback.features[0]}
               </span>
             </div>
 
@@ -161,7 +178,7 @@ const HomeHero = () => {
               <SearchCheck size={18} />
 
               <span>
-                {hero.features?.[1] || heroFallback.features[1]}
+                {banner.features?.[1] || heroFallback.features[1]}
               </span>
             </div>
 
@@ -169,7 +186,7 @@ const HomeHero = () => {
               <Globe2 size={18} />
 
               <span>
-                {hero.features?.[2] || heroFallback.features[2]}
+                {banner.features?.[2] || heroFallback.features[2]}
               </span>
             </div>
           </div>
