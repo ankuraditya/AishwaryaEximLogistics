@@ -9,12 +9,14 @@ import { productCategories as fallbackCategories } from "../../data/home";
 import { useCatalogueData } from "../../hooks/useCatalogueData";
 import { useCmsSection } from "../../hooks/useCmsSection";
 import handicraftsImage from "../../assets/images/categories/handicrafts-category.webp";
+import makhanaImage from "../../assets/images/categories/makhana-category.webp";
 import packagingImage from "../../assets/images/categories/packaging-category.webp";
 import leatherImage from "../../assets/images/categories/leather-category.webp";
 import garmentsImage from "../../assets/images/categories/garments-category.webp";
 
 const categoryImages = {
   handicrafts: handicraftsImage,
+  "agro-food-products": makhanaImage,
   "biodegradable-food-packaging": packagingImage,
   "leather-purses-bags": leatherImage,
   "garments-jeans": garmentsImage,
