@@ -42,7 +42,14 @@ const ProductCategories = () => {
           description={content.body}
         />
 
-        <div className="ael-home-categories__grid">
+        <div
+          className={[
+            "ael-home-categories__grid",
+            productCategories.length === 5
+              ? "ael-home-categories__grid--five"
+              : "",
+          ].filter(Boolean).join(" ")}
+        >
           {productCategories.map((category) => {
             return (
               <Link

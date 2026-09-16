@@ -874,6 +874,12 @@
   gap: 18px;
 }
 
+.ael-home-categories__grid--five > .ael-home-category:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc((100% - 54px) / 4);
+}
+
 .ael-home-category {
   position: relative;
 
@@ -3185,6 +3191,10 @@
       repeat(2, minmax(0, 1fr));
   }
 
+  .ael-home-categories__grid--five > .ael-home-category:last-child {
+    width: calc((100% - 18px) / 2);
+  }
+
   .ael-home-handicrafts__grid {
     gap: 55px;
   }
@@ -3468,6 +3478,11 @@
 
   .ael-home-category {
     min-height: auto;
+  }
+
+  .ael-home-categories__grid--five > .ael-home-category:last-child {
+    grid-column: auto;
+    width: 100%;
   }
 
   .ael-home-handicrafts__visual {
