@@ -23,8 +23,21 @@ import handicraft06 from "../../assets/images/banners/hero-global-products.png";
 import madhubaniCollection from "../../assets/images/banners/hero-madhubani-collection.webp";
 import artisanSculptures from "../../assets/images/banners/hero-artisan-sculptures.webp";
 import jutePouches from "../../assets/images/banners/hero-jute-pouches.webp";
+import biharArtisans from "../../assets/images/banners/hero-bihar-artisans.webp";
 
 const heroSlides = [
+  {
+    image: biharArtisans,
+    alt: "Bihar artisan creating traditional Madhubani paintings and crafts",
+    label: "Authentic Bihar handicrafts",
+    eyebrow: "Bihar Handicrafts • Art, Culture & Craft",
+    heading: "Authentic Bihar Art, Shared with the World.",
+    body: "Discover Madhubani, Mithila and Vajjika-inspired paintings and crafts—celebrating skilled artisans, cultural heritage and distinctive handmade expression.",
+    primary_button: "Explore Handicrafts",
+    primary_link: "/products/handicrafts",
+    secondary_button: "View Our Gallery",
+    secondary_link: "/handicrafts-gallery",
+  },
   {
     image: jutePouches,
     alt: "Hand-painted Mithila art jute canvas utility pouches",
