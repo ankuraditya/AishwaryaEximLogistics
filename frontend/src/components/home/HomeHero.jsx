@@ -22,8 +22,21 @@ import handicraft03 from "../../assets/images/banners/hero-mithila.png";
 import handicraft06 from "../../assets/images/banners/hero-global-products.png";
 import madhubaniCollection from "../../assets/images/banners/hero-madhubani-collection.webp";
 import artisanSculptures from "../../assets/images/banners/hero-artisan-sculptures.webp";
+import jutePouches from "../../assets/images/banners/hero-jute-pouches.webp";
 
 const heroSlides = [
+  {
+    image: jutePouches,
+    alt: "Hand-painted Mithila art jute canvas utility pouches",
+    label: "Sustainable jute utility pouches",
+    eyebrow: "Eco-Friendly Jute • Hand-Painted Mithila Art",
+    heading: "Everyday Utility, Crafted with Indian Artistry.",
+    body: "Source lightweight, durable jute canvas pouches featuring colorful hand-painted Mithila motifs—ideal for gifting, travel essentials and buyer-specific collections.",
+    primary_button: "Explore Handicrafts",
+    primary_link: "/products/handicrafts",
+    secondary_button: "Request a Quote",
+    secondary_link: "/request-a-quote",
+  },
   {
     image: artisanSculptures,
     alt: "Artisan dragon, wolf and Buddha sculptures with Bihar agro products",
