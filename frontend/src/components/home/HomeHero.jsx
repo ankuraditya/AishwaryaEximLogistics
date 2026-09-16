@@ -24,8 +24,21 @@ import madhubaniCollection from "../../assets/images/banners/hero-madhubani-coll
 import artisanSculptures from "../../assets/images/banners/hero-artisan-sculptures.webp";
 import jutePouches from "../../assets/images/banners/hero-jute-pouches.webp";
 import biharArtisans from "../../assets/images/banners/hero-bihar-artisans.webp";
+import makhanaExport from "../../assets/images/banners/hero-makhana-export.webp";
 
 const heroSlides = [
+  {
+    image: makhanaExport,
+    alt: "Premium plain and flavored Makhana with export packaging",
+    label: "Premium Makhana for global markets",
+    eyebrow: "Premium Makhana • Sourced in India",
+    heading: "Bihar’s Superfood, Prepared for Global Markets.",
+    body: "Source natural and flavored Makhana in retail, gifting and bulk packaging formats, supported by buyer-focused export and logistics coordination.",
+    primary_button: "Explore Makhana",
+    primary_link: "/products/agro-food-products",
+    secondary_button: "Request a Quote",
+    secondary_link: "/request-a-quote",
+  },
   {
     image: biharArtisans,
     alt: "Bihar artisan creating traditional Madhubani paintings and crafts",
