@@ -21,8 +21,21 @@ import handicraft01 from "../../assets/images/banners/hero-handicrafts.png";
 import handicraft03 from "../../assets/images/banners/hero-mithila.png";
 import handicraft06 from "../../assets/images/banners/hero-global-products.png";
 import madhubaniCollection from "../../assets/images/banners/hero-madhubani-collection.webp";
+import artisanSculptures from "../../assets/images/banners/hero-artisan-sculptures.webp";
 
 const heroSlides = [
+  {
+    image: artisanSculptures,
+    alt: "Artisan dragon, wolf and Buddha sculptures with Bihar agro products",
+    label: "Artisan décor for global buyers",
+    eyebrow: "Artisan Sculptures • Bihar Agro Products",
+    heading: "Distinctive Indian Craft, Ready for Global Markets.",
+    body: "Discover statement sculptures, carved décor and carefully sourced Bihar agro products supported by export-focused coordination for international buyers.",
+    primary_button: "Explore Our Products",
+    primary_link: "/products",
+    secondary_button: "Request a Quote",
+    secondary_link: "/request-a-quote",
+  },
   {
     image: madhubaniCollection,
     alt: "Curated collection of Madhubani handicrafts for global buyers",
