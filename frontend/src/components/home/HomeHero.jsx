@@ -20,8 +20,21 @@ import { mediaUrl } from "../../utils/media";
 import handicraft01 from "../../assets/images/banners/hero-handicrafts.png";
 import handicraft03 from "../../assets/images/banners/hero-mithila.png";
 import handicraft06 from "../../assets/images/banners/hero-global-products.png";
+import madhubaniCollection from "../../assets/images/banners/hero-madhubani-collection.webp";
 
 const heroSlides = [
+  {
+    image: madhubaniCollection,
+    alt: "Curated collection of Madhubani handicrafts for global buyers",
+    label: "Madhubani artistry for global markets",
+    eyebrow: "Madhubani Handicrafts • Crafted in Bihar",
+    heading: "India’s Folk Art, Curated for Global Buyers.",
+    body: "Explore hand-painted bags, pouches, paintings, decorative plates and trays created with the vibrant character of traditional Madhubani artistry.",
+    primary_button: "Explore Handicrafts",
+    primary_link: "/products/handicrafts",
+    secondary_button: "View Our Gallery",
+    secondary_link: "/handicrafts-gallery",
+  },
   {
     image: handicraft01,
     alt: "Hand-painted Indian handicraft handbag",
