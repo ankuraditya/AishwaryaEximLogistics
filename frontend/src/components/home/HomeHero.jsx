@@ -237,10 +237,6 @@ const HomeHero = () => {
                         : ""
                     }
                   />
-
-                  <figcaption>
-                    {slide.label}
-                  </figcaption>
                 </figure>
               )
             )}

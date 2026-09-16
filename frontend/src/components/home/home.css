@@ -281,20 +281,6 @@
   object-fit: cover;
 }
 
-.ael-home-hero__slide figcaption {
-  position: absolute;
-  z-index: 2;
-  left: 26px;
-  bottom: 25px;
-
-  color: var(--ael-white);
-
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 .ael-home-hero__slider-control {
   position: absolute;
   z-index: 3;
@@ -3700,11 +3686,6 @@
     height: 38px;
   }
 
-  .ael-home-hero__slide figcaption {
-    left: 18px;
-    bottom: 55px;
-  }
-
   .ael-home-hero__slider-dots {
     right: 18px;
     bottom: 24px;
@@ -3842,7 +3823,6 @@
 }
 .ael-home-hero--banner h1 { text-shadow: 0 2px 16px rgba(3,20,43,.35); }
 .ael-home-hero--banner .ael-home-hero__description { text-shadow: 0 1px 8px rgba(3,20,43,.5); }
-.ael-home-hero--banner .ael-home-hero__slide figcaption { left: 24px; right: 150px; bottom: 42px; }
 .ael-home-hero--banner .ael-home-hero__slider-control { top: auto; bottom: 78px; transform: none; }
 .ael-home-hero--banner .ael-home-hero__slider-control--previous { left: auto; right: 86px; }
 .ael-home-hero--banner .ael-home-hero__slider-control--next { right: 30px; }
@@ -3861,8 +3841,7 @@
   .ael-home-hero--banner .ael-home-hero__container { padding-inline: 14px; }
   .ael-home-hero--banner .ael-home-hero__content { max-width: 53%; text-align: left; }
   .ael-home-hero--banner .ael-home-hero__description,
-  .ael-home-hero--banner .ael-home-hero__features,
-  .ael-home-hero--banner .ael-home-hero__slide figcaption { display: none; }
+  .ael-home-hero--banner .ael-home-hero__features { display: none; }
   .ael-home-hero--banner .ael-home-hero__slide { transform: none; }
   .ael-home-hero--banner .ael-home-hero__slide img {
     height: 100%;
@@ -3880,7 +3859,6 @@
   .ael-home-hero--banner .ael-home-hero__features { padding-top: 8px; gap: 5px; }
   .ael-home-hero--banner .ael-home-hero__features > div { font-size: clamp(.4rem, 1.25vw, .6rem); gap: 3px; }
   .ael-home-hero--banner .ael-home-hero__features svg { width: 9px; height: 9px; }
-  .ael-home-hero--banner .ael-home-hero__slide figcaption { left: 14px; right: 100px; bottom: 17px; font-size: .4rem; }
   .ael-home-hero--banner .ael-home-hero__slider-control { width: 24px; height: 24px; bottom: 25px; }
   .ael-home-hero--banner .ael-home-hero__slider-control--previous { right: 48px; }
   .ael-home-hero--banner .ael-home-hero__slider-control--next { right: 14px; }
