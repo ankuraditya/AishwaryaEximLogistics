@@ -92,12 +92,29 @@ class FrontendContentSeeder extends Seeder
         }
         $galleryMap = ['bags-totes', 'clutches-wallets', 'bags-totes', 'clutches-wallets', 'bags-totes', 'bags-totes', 'traditional-artwork', 'traditional-artwork', 'folders-accessories', 'traditional-artwork', 'traditional-artwork', 'traditional-artwork'];
         $galleryTitles = ['Fish Pattern Hand-Painted Handbag', 'Yellow Fish Motif Clutch', 'Traditional Hand-Painted Tote', 'Hand-Painted Purse & Clutch Collection', 'Traditional Handbag Collection', 'Wooden Handle Hand-Painted Bags', 'Traditional Folk Artwork Collection', 'Colourful Handicraft Artwork', 'Hand-Painted Folders & Accessories', 'Figurative Traditional Artwork', 'Traditional Fish Artwork', 'Decorative Madhubani Collection'];
+        $galleryProductSlugs = ['hand-painted-fish-pattern-handbag', 'yellow-fish-motif-clutch', 'traditional-hand-painted-tote-bag', 'hand-painted-purse-clutch-collection', 'traditional-handbag-collection', 'wooden-handle-hand-painted-bags', 'traditional-folk-artwork-collection', 'colourful-handicraft-artwork'];
         foreach ($galleryTitles as $index => $title) {
             $media = $this->seedImage($index + 1, $title);
             if (! $media) {
                 continue;
             }
-            GalleryItem::updateOrCreate(['media_id' => $media->id], ['gallery_category_id' => $galleryCategories[$galleryMap[$index]]->id, 'product_id' => $index < 8 ? $productModels[array_keys($productModels)[$index]]->id : null, 'title' => $title, 'caption' => 'Original Indian handicraft artwork from the Aishwary collection.', 'is_featured' => $index < 4, 'is_active' => true, 'sort_order' => ($index + 1) * 10]);
+            GalleryItem::updateOrCreate(['media_id' => $media->id], ['gallery_category_id' => $galleryCategories[$galleryMap[$index]]->id, 'product_id' => isset($galleryProductSlugs[$index]) ? $productModels[$galleryProductSlugs[$index]]->id : null, 'title' => $title, 'caption' => 'Original Indian handicraft artwork from the Aishwary collection.', 'is_featured' => $index < 4, 'is_active' => true, 'sort_order' => ($index + 1) * 10]);
+        }
+
+        $newGalleryItems = [
+            [25, 'bags-totes', 'madhubani-fish-lotus-handbag', 'Madhubani Fish & Lotus Handbag'],
+            [26, 'clutches-wallets', 'hand-painted-madhubani-pouches', 'Hand-Painted Madhubani Pouches'],
+            [27, 'bags-totes', 'madhubani-art-tote-bags', 'Madhubani Art Tote Bags'],
+            [28, 'traditional-artwork', 'traditional-madhubani-painting', 'Traditional Madhubani Painting'],
+            [29, 'traditional-artwork', 'decorative-madhubani-plate', 'Decorative Madhubani Plate'],
+            [30, 'traditional-artwork', 'hand-painted-madhubani-tray', 'Hand-Painted Madhubani Tray'],
+        ];
+        foreach ($newGalleryItems as $index => [$imageNumber, $galleryCategorySlug, $productSlug, $title]) {
+            $media = $this->seedImage($imageNumber, $title);
+            if (! $media) {
+                continue;
+            }
+            GalleryItem::updateOrCreate(['media_id' => $media->id], ['gallery_category_id' => $galleryCategories[$galleryCategorySlug]->id, 'product_id' => $productModels[$productSlug]->id, 'title' => $title, 'caption' => 'Madhubani-inspired Indian craftsmanship from the Aishwary product collection.', 'is_featured' => $index < 3, 'is_active' => true, 'sort_order' => ($index + 13) * 10]);
         }
 
         $blogCategories = [];
