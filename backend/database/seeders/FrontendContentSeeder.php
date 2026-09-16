@@ -42,6 +42,12 @@ class FrontendContentSeeder extends Seeder
         }
 
         $products = [
+            ['HC-MDH-025', 'madhubani-fish-lotus-handbag', 'Madhubani Fish & Lotus Handbag', 'handicrafts', 'hand-painted-bags', 'A beautifully handcrafted statement handbag featuring vibrant twin-fish and lotus Madhubani artwork.', 25],
+            ['HC-MDH-026', 'hand-painted-madhubani-pouches', 'Hand-Painted Madhubani Pouches', 'handicrafts', 'purses-clutches', 'A colourful set of hand-painted pouches featuring intricate fish, bird, floral and geometric Madhubani motifs.', 26],
+            ['HC-MDH-027', 'madhubani-art-tote-bags', 'Madhubani Art Tote Bags', 'handicrafts', 'tote-bags', 'Eco-friendly natural-fibre tote bags adorned with expressive traditional Madhubani artwork.', 27],
+            ['HC-MDH-028', 'traditional-madhubani-painting', 'Traditional Madhubani Painting', 'handicrafts', 'decorative-artwork', 'A framed handmade Madhubani painting celebrating Indian cultural heritage through vivid figures and folk-art borders.', 28],
+            ['HC-MDH-029', 'decorative-madhubani-plate', 'Decorative Madhubani Plate', 'handicrafts', 'decorative-artwork', 'A vibrant hand-painted decorative plate featuring the sun, fish and a traditional Madhubani figure.', 29],
+            ['HC-MDH-030', 'hand-painted-madhubani-tray', 'Hand-Painted Madhubani Tray', 'handicrafts', 'decorative-artwork', 'An elegant serving and décor tray painted with a detailed tree-of-life, birds and deer composition.', 30],
             ['AEL-HC-001', 'hand-painted-fish-pattern-handbag', 'Hand-Painted Fish Pattern Handbag', 'handicrafts', 'hand-painted-bags', 'A colourful hand-painted handbag featuring a distinctive fish-inspired folk-art composition.', 1],
             ['AEL-HC-002', 'yellow-fish-motif-clutch', 'Yellow Fish Motif Clutch', 'handicrafts', 'purses-clutches', 'A vibrant hand-painted clutch featuring traditional fish-inspired artwork and colourful detailing.', 2],
             ['AEL-HC-003', 'traditional-hand-painted-tote-bag', 'Traditional Hand-Painted Tote Bag', 'handicrafts', 'tote-bags', 'A large tote-style handicraft bag featuring traditional Indian hand-painted visual elements.', 3],
