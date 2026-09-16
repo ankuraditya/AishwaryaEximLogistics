@@ -25,7 +25,8 @@ class FrontendContentSeeder extends Seeder
         }
 
         $categories = [
-            ['handicrafts', 'Indian Handicrafts', 'Explore hand-painted bags, purses, clutches, accessories and traditional Indian folk-art products.', [['hand-painted-bags', 'Hand-Painted Bags'], ['tote-bags', 'Tote Bags'], ['purses-clutches', 'Purses & Clutches'], ['folders-accessories', 'Folders & Accessories'], ['decorative-artwork', 'Decorative Artwork']]],
+            ['handicrafts', 'Indian Handicrafts', 'Explore hand-painted bags, purses, clutches, accessories and traditional Indian folk-art products.', [['hand-painted-bags', 'Hand-Painted Bags'], ['tote-bags', 'Tote Bags'], ['purses-clutches', 'Purses & Clutches'], ['folders-accessories', 'Folders & Accessories'], ['decorative-artwork', 'Decorative Artwork'], ['sculptures-bookends', 'Sculptures & Bookends'], ['utility-pouches', 'Utility Pouches'], ['wall-art', 'Wall Art'], ['textiles-home-decor', 'Textiles & Home Decor']]],
+            ['agro-food-products', 'Makhana & Agro Products', 'Explore premium natural and flavoured Makhana products prepared for retail, wholesale and export requirements.', [['plain-makhana', 'Plain Makhana'], ['flavoured-makhana', 'Flavoured Makhana']]],
             ['biodegradable-food-packaging', 'Biodegradable Food Packaging', 'Explore food-service packaging categories intended for buyers seeking biodegradable and sustainability-focused alternatives.', [['plates', 'Plates'], ['bowls', 'Bowls'], ['containers', 'Containers'], ['trays', 'Trays'], ['cups', 'Cups'], ['cutlery', 'Cutlery']]],
             ['leather-purses-bags', 'Leather Purses & Bags', 'Explore handbags, purses, wallets, tote bags and business-bag sourcing categories.', [['handbags', 'Handbags'], ['purses', 'Purses'], ['wallets', 'Wallets'], ['leather-tote-bags', 'Tote Bags'], ['business-bags', 'Business Bags']]],
             ['garments-jeans', 'Garments & Jeans', 'Explore jeans, denim and garment categories for B2B and buyer-specific sourcing requirements.', [['mens-jeans', "Men's Jeans"], ['womens-jeans', "Women's Jeans"], ['denim', 'Denim Collection'], ['mens-garments', "Men's Garments"], ['womens-garments', "Women's Garments"]]],
@@ -42,6 +43,37 @@ class FrontendContentSeeder extends Seeder
         }
 
         $products = [
+            ['HC-SCL-031', 'exquisite-white-dragon-bookend', 'Exquisite White Dragon Bookend', 'handicrafts', 'sculptures-bookends', 'An intricately sculpted white dragon bookend designed as a distinctive statement piece for shelves, libraries and refined interiors.', 31],
+            ['HC-SCL-032', 'masterpiece-black-dragon-bookend', 'Masterpiece Black Dragon Bookend', 'handicrafts', 'sculptures-bookends', 'A dramatic black dragon bookend with detailed fantasy-inspired craftsmanship for sophisticated home and office décor.', 31],
+            ['HC-SCL-033', 'artisan-wolf-sculpture', 'Artisan Wolf Sculpture', 'handicrafts', 'sculptures-bookends', 'A finely detailed artisan wolf sculpture created as a characterful decorative accent for modern interiors.', 31],
+            ['HC-SCL-034', 'tranquil-white-buddha-sculpture', 'Tranquil White Buddha Sculpture', 'handicrafts', 'sculptures-bookends', 'A serene white seated Buddha sculpture intended to bring a calm and elegant presence to interior spaces.', 31],
+            ['HC-JUT-035', 'jute-canvas-utility-pouch', 'Jute Canvas Utility Pouch', 'handicrafts', 'utility-pouches', 'An eco-friendly natural jute canvas pouch with zipper closure and hand-painted Mithila-inspired artwork for multipurpose everyday use.', 32],
+            ['HC-SCL-036', 'gargoyle-guardian-sculpture', 'Gargoyle Guardian Sculpture', 'handicrafts', 'sculptures-bookends', 'A gothic-inspired gargoyle guardian sculpture symbolising wisdom, protection and strength.', 33],
+            ['HC-SCL-037', 'majestic-dragon-sculpture', 'Majestic Dragon Sculpture', 'handicrafts', 'sculptures-bookends', 'A powerful winged dragon sculpture with intricate detailing for collectors and distinctive interior décor.', 33],
+            ['HC-SCL-038', 'royal-griffin-sculpture', 'Royal Griffin Sculpture', 'handicrafts', 'sculptures-bookends', 'A detailed royal griffin sculpture combining the strength and character of the legendary eagle-lion form.', 33],
+            ['HC-SCL-039', 'phoenix-elegance-sculpture', 'Phoenix Elegance Sculpture', 'handicrafts', 'sculptures-bookends', 'An elegant flowing phoenix sculpture representing renewal, positive energy and refined decorative artistry.', 33],
+            ['HC-SCL-040', 'grand-gryphon-sculpture', 'Grand Gryphon Sculpture', 'handicrafts', 'sculptures-bookends', 'A grand winged gryphon sculpture designed as a premium statement piece for homes, offices and curated spaces.', 33],
+            ['HC-SCL-041', 'reading-pup-sculpture', 'The Reading Pup Sculpture', 'handicrafts', 'sculptures-bookends', 'A charming reading puppy sculpture with playful character for libraries, offices and creative interiors.', 33],
+            ['HC-ART-042', 'hand-painted-wall-hanging', 'Hand-Painted Wall Hanging', 'handicrafts', 'wall-art', 'A traditional hand-painted wall hanging featuring Indian folk motifs, nature and cultural symbols.', 34],
+            ['HC-ART-043', 'traditional-folk-painting', 'Traditional Folk Painting', 'handicrafts', 'wall-art', 'A vibrant traditional folk painting depicting village life, animals and nature through expressive Indian heritage artwork.', 34],
+            ['HC-ART-044', 'pattachitra-art-products', 'Pattachitra Art Products', 'handicrafts', 'wall-art', 'Intricately detailed hand-painted Pattachitra-inspired artwork created for collectors and cultural décor.', 34],
+            ['HC-BOX-045', 'madhubani-handicraft-boxes', 'Madhubani Handicraft Boxes', 'handicrafts', 'decorative-artwork', 'Colourful decorative storage and gifting boxes painted with traditional Madhubani-inspired designs.', 34],
+            ['HC-TEX-046', 'hand-painted-indian-textile', 'Hand-Painted Indian Textile', 'handicrafts', 'textiles-home-decor', 'A beautifully crafted textile enriched with colourful traditional Indian hand-painted artwork.', 34],
+            ['HC-TEX-047', 'decorative-textile-mats', 'Decorative Textile & Mats', 'handicrafts', 'textiles-home-decor', 'Handcrafted decorative mats and textile pieces featuring unique tribal and folk-art designs.', 34],
+            ['AG-MAK-001', 'plain-makhana-original', 'Plain Makhana (Original)', 'agro-food-products', 'plain-makhana', 'Pure, crunchy and natural fox nuts sourced for premium retail, wholesale and export requirements.', 35],
+            ['AG-MAK-002', 'roasted-makhana-lightly-salted', 'Roasted Makhana (Lightly Salted)', 'agro-food-products', 'flavoured-makhana', 'Lightly salted roasted Makhana offering a crisp, convenient and naturally satisfying snack.', 35],
+            ['AG-MAK-003', 'peri-peri-makhana', 'Peri Peri Makhana', 'agro-food-products', 'flavoured-makhana', 'Bold and spicy peri-peri flavoured Makhana created for modern snack and retail markets.', 35],
+            ['AG-MAK-004', 'cheese-makhana', 'Cheese Makhana', 'agro-food-products', 'flavoured-makhana', 'Rich and creamy cheese flavoured Makhana with a light, crisp texture.', 35],
+            ['AG-MAK-005', 'herb-garlic-makhana', 'Herb & Garlic Makhana', 'agro-food-products', 'flavoured-makhana', 'Aromatic herb and garlic flavoured Makhana prepared as a savoury premium snack.', 35],
+            ['AG-MAK-006', 'chocolate-makhana', 'Chocolate Makhana', 'agro-food-products', 'flavoured-makhana', 'Chocolate-coated Makhana combining a crisp centre with an indulgent sweet finish.', 35],
+            ['AG-MAK-007', 'simple-natural-makhana', 'Simple Natural Makhana', 'agro-food-products', 'plain-makhana', 'Natural unflavoured Makhana positioned for healthy snacking, bulk sourcing and private-label requirements.', 35],
+            ['AG-MAK-008', 'assorted-flavoured-makhana', 'Assorted Flavoured Makhana', 'agro-food-products', 'flavoured-makhana', 'A versatile assorted Makhana range available across popular savoury and sweet flavour profiles.', 35],
+            ['HC-DEC-048', 'artisan-dragon-basket', 'Artisan Dragon Basket', 'handicrafts', 'decorative-artwork', 'An ornate dragon-shaped decorative basket combining intricate detailing with functional storage.', 36],
+            ['HC-SCL-049', 'shark-sculpture', 'Shark Sculpture', 'handicrafts', 'sculptures-bookends', 'A realistic shark sculpture designed as a bold decorative piece for collectors and contemporary interiors.', 36],
+            ['HC-SCL-050', 'dinosaur-figurine', 'Dinosaur Figurine', 'handicrafts', 'sculptures-bookends', 'A detailed dinosaur figurine adding a creative and distinctive accent to home or office décor.', 36],
+            ['HC-DEC-051', 'elephant-pen-holder', 'Elephant Pen Holder', 'handicrafts', 'decorative-artwork', 'A decorative elephant-shaped pen holder combining practical desk organisation with traditional character.', 36],
+            ['HC-SCL-052', 'three-headed-dog-statue', 'Three-Headed Dog Statue', 'handicrafts', 'sculptures-bookends', 'A powerful three-headed guardian dog statue created as a symbolic collectible and display piece.', 36],
+            ['HC-DEC-053', 'owl-trinket-bowl', 'Owl Trinket Bowl', 'handicrafts', 'decorative-artwork', 'A charming owl-shaped bowl for storing small accessories, jewellery and decorative keepsakes.', 36],
             ['HC-MDH-025', 'madhubani-fish-lotus-handbag', 'Madhubani Fish & Lotus Handbag', 'handicrafts', 'hand-painted-bags', 'A beautifully handcrafted statement handbag featuring vibrant twin-fish and lotus Madhubani artwork.', 25],
             ['HC-MDH-026', 'hand-painted-madhubani-pouches', 'Hand-Painted Madhubani Pouches', 'handicrafts', 'purses-clutches', 'A colourful set of hand-painted pouches featuring intricate fish, bird, floral and geometric Madhubani motifs.', 26],
             ['HC-MDH-027', 'madhubani-art-tote-bags', 'Madhubani Art Tote Bags', 'handicrafts', 'tote-bags', 'Eco-friendly natural-fibre tote bags adorned with expressive traditional Madhubani artwork.', 27],
@@ -115,6 +147,21 @@ class FrontendContentSeeder extends Seeder
                 continue;
             }
             GalleryItem::updateOrCreate(['media_id' => $media->id], ['gallery_category_id' => $galleryCategories[$galleryCategorySlug]->id, 'product_id' => $productModels[$productSlug]->id, 'title' => $title, 'caption' => 'Madhubani-inspired Indian craftsmanship from the Aishwary product collection.', 'is_featured' => $index < 3, 'is_active' => true, 'sort_order' => $index + 1]);
+        }
+
+        $latestGalleryCollections = [
+            [31, 'traditional-artwork', 'exquisite-white-dragon-bookend', 'Sculptures & Bookends Collection'],
+            [32, 'folders-accessories', 'jute-canvas-utility-pouch', 'Jute Utility Pouch Collection'],
+            [33, 'traditional-artwork', 'gargoyle-guardian-sculpture', 'Fantasy Art & Decor Collection'],
+            [34, 'traditional-artwork', 'hand-painted-wall-hanging', 'Indian Wall Art & Textiles Collection'],
+            [36, 'traditional-artwork', 'artisan-dragon-basket', 'Functional Artisan Decor Collection'],
+        ];
+        foreach ($latestGalleryCollections as [$imageNumber, $galleryCategorySlug, $productSlug, $title]) {
+            $media = $this->seedImage($imageNumber, $title);
+            if (! $media) {
+                continue;
+            }
+            GalleryItem::updateOrCreate(['media_id' => $media->id], ['gallery_category_id' => $galleryCategories[$galleryCategorySlug]->id, 'product_id' => $productModels[$productSlug]->id, 'title' => $title, 'caption' => 'New artisan products from the latest Aishwary Exim & Logistics collection.', 'is_featured' => true, 'is_active' => true, 'sort_order' => 0]);
         }
 
         $blogCategories = [];

@@ -118,7 +118,7 @@ export const sortCatalogueProducts = (
 
     default:
       return sorted.sort(
-        (a, b) => a.id - b.id
+        (a, b) => b.id - a.id
       );
   }
 };
