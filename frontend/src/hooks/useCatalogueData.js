@@ -84,7 +84,7 @@ export const useCatalogueData = () => {
 
   useEffect(() => {
     let active = true;
-    Promise.all([getCategories(), getProducts({ per_page: 60 })])
+    Promise.all([getCategories(), getProducts({ per_page: 100 })])
       .then(([categoryResponse, productResponse]) => {
         if (!active) return;
         const categories = categoryResponse?.data;
