@@ -836,16 +836,20 @@
 
 .ael-home-about__brand-strip strong {
   color:
-    var(--ael-primary);
+    var(--ael-white);
 
   font-size: 0.86rem;
 }
 
 .ael-home-about__brand-strip span {
   color:
-    var(--ael-text-secondary);
+    rgba(255, 255, 255, 0.76);
 
   font-size: 0.76rem;
+}
+
+.ael-home-about__brand-strip .ael-home-about__brand-mark {
+  color: rgba(255, 255, 255, 0.64);
 }
 
 
