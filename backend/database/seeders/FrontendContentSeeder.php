@@ -114,7 +114,7 @@ class FrontendContentSeeder extends Seeder
             if (! $media) {
                 continue;
             }
-            GalleryItem::updateOrCreate(['media_id' => $media->id], ['gallery_category_id' => $galleryCategories[$galleryCategorySlug]->id, 'product_id' => $productModels[$productSlug]->id, 'title' => $title, 'caption' => 'Madhubani-inspired Indian craftsmanship from the Aishwary product collection.', 'is_featured' => $index < 3, 'is_active' => true, 'sort_order' => ($index + 13) * 10]);
+            GalleryItem::updateOrCreate(['media_id' => $media->id], ['gallery_category_id' => $galleryCategories[$galleryCategorySlug]->id, 'product_id' => $productModels[$productSlug]->id, 'title' => $title, 'caption' => 'Madhubani-inspired Indian craftsmanship from the Aishwary product collection.', 'is_featured' => $index < 3, 'is_active' => true, 'sort_order' => $index + 1]);
         }
 
         $blogCategories = [];
