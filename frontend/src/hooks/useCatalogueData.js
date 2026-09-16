@@ -84,11 +84,25 @@ export const useCatalogueData = () => {
 
   useEffect(() => {
     let active = true;
-    Promise.all([getCategories(), getProducts({ per_page: 100 })])
-      .then(([categoryResponse, productResponse]) => {
+    const getAllProducts = async () => {
+      const firstResponse = await getProducts({ per_page: 60 });
+      const firstPage = firstResponse?.data;
+      const records = Array.isArray(firstPage?.data) ? [...firstPage.data] : Array.isArray(firstPage) ? [...firstPage] : [];
+      const lastPage = Number(firstPage?.last_page || 1);
+
+      for (let page = 2; page <= lastPage; page += 1) {
+        const response = await getProducts({ per_page: 60, page });
+        const pageRecords = response?.data?.data || response?.data;
+        if (Array.isArray(pageRecords)) records.push(...pageRecords);
+      }
+
+      return records;
+    };
+
+    Promise.all([getCategories(), getAllProducts()])
+      .then(([categoryResponse, products]) => {
         if (!active) return;
         const categories = categoryResponse?.data;
-        const products = productResponse?.data?.data || productResponse?.data;
         if (!Array.isArray(categories) || !categories.length || !Array.isArray(products) || !products.length) {
           throw new Error("The CMS catalogue is currently empty.");
         }
